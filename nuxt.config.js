@@ -5,15 +5,21 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s - Kusmayadi',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Meta description' }
     ],
     link: [
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900' },
+      { rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    bodyAttrs: {
+      class: 'bg-gray-800',
+      color: '#fff'
+    }
   },
   /*
   ** Customize the progress-bar color
@@ -23,6 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/tailwind.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -40,7 +47,14 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-purgecss'
   ],
+
+  buildModules: [
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/tailwindcss'
+  ],
+
   /*
   ** Build configuration
   */
@@ -50,5 +64,17 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  
+  fontawesome: {
+    icons: {
+      solid: ['faBars', 'faTimes', 'faBriefcase', 'faArchive', 'faCode'],
+      regular: ['faEnvelope'],
+      brands: ['faFacebook', 'faTwitter']
+    }
+  },
+
+  purgeCSS: {
+    mode: 'postcss'
   }
 }

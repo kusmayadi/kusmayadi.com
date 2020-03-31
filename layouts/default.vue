@@ -1,55 +1,26 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="h-screen bg-fixed bg-center bg-cover" style="background-image: url(/images/silver-and-black-laptop-computer-1229861.jpg)">
+    <div class="absolute w-full">
+      <navigation/>
+    </div>
+    <div class="m-auto flex items-center justify-center align-middle h-screen">
+      <h1 class="text-center text-white font-semibold text-6xl">Hello, world!</h1>
+    </div>
+    <nuxt/>
+    <div class="absolute mt-5 w-full">
+      <site-footer/>
+    </div>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+  import navigation from '~/components/navigation'
+  import siteFooter from '~/components/footer'
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+  export default {
+    components: {
+      navigation,
+      siteFooter
+    }
+  }
+</script>
