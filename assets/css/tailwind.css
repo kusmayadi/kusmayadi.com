@@ -13,13 +13,33 @@
 }
 
 .content h3 a {
-  @apply font-semibold text-blue-700;
-}
-
-.content h3 a:hover {
-  @apply text-blue-800;
+  @apply font-semibold;
 }
 
 .content h4 {
   @apply mt-2 font-semibold;
+}
+
+.content a {
+  @apply text-blue-700;
+}
+
+.content a:hover {
+  @apply text-blue-800;
+}
+
+.content p {
+  @apply my-1;
+}
+
+.content p.tech-stack {
+  @apply font-mono;
+}
+
+.content p.tech-stack span {
+  @apply font-semibold;
+}
+
+.content p ul {
+  @apply list-inside list-disc;
 }
