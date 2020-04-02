@@ -1,3 +1,3 @@
 # kusmayadi.com
 
-kusmayadi.com website. Built using nuxt.js.
+kusmayadi.com website. Built using nuxt.js & Tailwind.
