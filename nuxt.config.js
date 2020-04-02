@@ -5,7 +5,9 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s - Kusmayadi',
+    titleTemplate: (titleChunk) => {
+      return titleChunk ? `${titleChunk} - Kusmayadi` : 'Kusmayadi';
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,7 +19,7 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     bodyAttrs: {
-      class: 'bg-gray-800',
+      class: 'bg-gray-900',
       color: '#fff'
     }
   },
