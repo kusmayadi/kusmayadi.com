@@ -72,7 +72,7 @@ export default {
     icons: {
       solid: ['faBars', 'faTimes', 'faBriefcase', 'faArchive', 'faCode', 'faGlobe'],
       regular: ['faEnvelope'],
-      brands: ['faTwitter', 'faGithub']
+      brands: ['faTwitter', 'faGithub', 'faLinkedinIn']
     }
   },
 
