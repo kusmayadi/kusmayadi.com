@@ -6,14 +6,14 @@
       </div>
 
       <div class="sm:hidden">
-        <button type="button" @click="isOpen = !isOpen" class="hover:text-white focus:text-white focus:outline-none">
-          <font-awesome-icon v-if="!isOpen" :icon="['fas', 'bars']" class="fill-current" />
-          <font-awesome-icon v-if="isOpen" :icon="['fas', 'times']" class="fill-current" />
+        <button type="button" @click="openMenu" class="hover:text-white focus:text-white focus:outline-none">
+          <font-awesome-icon v-if="!$store.state.isMenuOpen" :icon="['fas', 'bars']" class="fill-current" />
+          <font-awesome-icon v-if="$store.state.isMenuOpen" :icon="['fas', 'times']" class="fill-current" />
         </button>
       </div>
     </div>
 
-    <div :class="isOpen ? 'block' : 'hidden'" class="px-4 bg-gray-800 py-4 opacity-75 sm:flex sm:bg-transparent text-sm">
+    <div :class="$store.state.isMenuOpen ? 'block' : 'hidden'" class="px-4 bg-gray-800 py-4 opacity-75 sm:flex sm:bg-transparent text-sm">
       <nuxt-link class="block sm:inline-block sm:ml-2 px-2 py-1 font-semibold hover:text-white focus:text-white" to="/work-experience"><font-awesome-icon :icon="['fas', 'briefcase']" class="mr-1"/> Work Experience</nuxt-link>
       <nuxt-link class="block sm:inline-block sm:ml-2 px-2 py-1 font-semibold hover:text-white focus:text-white" to="#"><font-awesome-icon :icon="['fas', 'archive']" class="mr-1"/> Projects</nuxt-link>
       <nuxt-link class="block sm:inline-block sm:ml-2 px-2 py-1 font-semibold hover:text-white focus:text-white" to="#"><font-awesome-icon :icon="['fas', 'code']" class="mr-1"/> Open Source</nuxt-link>
@@ -27,6 +27,12 @@
     data() {
       return {
         isOpen: false
+      }
+    },
+
+    methods: {
+      openMenu() {
+        this.$store.commit('isMenuOpen')
       }
     }
   }

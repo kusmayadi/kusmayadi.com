@@ -123,9 +123,13 @@ export default {
     title: 'Work Experience'
   },
 
-  created: function() {
+  created() {
     this.$store.commit('changeHeaderTitle', 'Work Experience');
     this.$store.commit('isHomepage', false);
+  },
+
+  mounted () {
+    this.$store.commit('isMenuOpen', false);
   }
 }
 </script>
