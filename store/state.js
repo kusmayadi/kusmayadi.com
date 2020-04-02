@@ -1,3 +1,4 @@
 export default () => ({
-  homepage: true
+  homepage: false,
+  headerTitle: ''
 })

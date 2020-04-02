@@ -1,8 +1,13 @@
 <template>
-  <div class="banner-info">
+  <div>
   </div>
 </template>
 
+<script>
 export default {
-  this.$store.state.homepage = true;
+  created() {
+    this.$store.commit('changeHeaderTitle', 'Hello, world!')
+    this.$store.commit('isHomepage', true);
+  }
 }
+</script>

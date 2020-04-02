@@ -3,3 +3,23 @@
 @import 'tailwindcss/components';
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
+
+.content h1 {
+  @apply font-bold text-xl;
+}
+
+.content h2 {
+  @apply font-semibold text-lg;
+}
+
+.content h3 a {
+  @apply font-semibold text-blue-700;
+}
+
+.content h3 a:hover {
+  @apply text-blue-800;
+}
+
+.content h4 {
+  @apply mt-2 font-semibold;
+}

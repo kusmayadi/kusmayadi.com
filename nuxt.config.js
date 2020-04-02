@@ -67,10 +67,10 @@ export default {
     extend (config, ctx) {
     }
   },
-  
+
   fontawesome: {
     icons: {
-      solid: ['faBars', 'faTimes', 'faBriefcase', 'faArchive', 'faCode'],
+      solid: ['faBars', 'faTimes', 'faBriefcase', 'faArchive', 'faCode', 'faGlobe'],
       regular: ['faEnvelope'],
       brands: ['faFacebook', 'faTwitter']
     }
