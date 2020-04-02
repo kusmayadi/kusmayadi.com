@@ -7,7 +7,7 @@
       <h1 class="text-center text-white font-semibold text-6xl">Hello, world!</h1>
     </div>
     <nuxt/>
-    <div class="absolute mt-5 w-full">
+    <div v-if="!$store.state.homepage" class="w-full">
       <site-footer/>
     </div>
   </div>
