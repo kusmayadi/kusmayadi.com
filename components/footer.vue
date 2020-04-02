@@ -5,6 +5,6 @@
       <a href="https://github.com/kusmayadi"><font-awesome-icon :icon="['fab', 'github']" class="mx-2"/></a>
       <a href="https://twitter.com/kusmayadi"><font-awesome-icon :icon="['fab', 'twitter']" class="mx-2"/></a>
     </div>
-    <p>© 2019 Kusmayadi. All rights reserved.</p>
+    <p>© 2020 Kusmayadi. All rights reserved.</p>
   </div>
 </template>
