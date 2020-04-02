@@ -1,5 +1,5 @@
 export default () => ({
-  homepage: false,
+  homepage: true,
   isMenuOpen: false,
   headerTitle: ''
 })
