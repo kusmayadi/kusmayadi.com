@@ -1,5 +1,5 @@
 <template>
-  <header class="text-gray-400 sm:flex sm:justify-between sm:items-center">
+  <header class="text-gray-300 sm:flex sm:justify-between sm:items-center">
     <div class="flex items-center justify-between px-4 py-3">
       <div>
         <nuxt-link to="/">Kusmayadi</nuxt-link>
@@ -17,6 +17,7 @@
       <nuxt-link class="block sm:inline-block sm:ml-2 px-2 py-1 font-semibold hover:text-white focus:text-white" to="/work-experience"><font-awesome-icon :icon="['fas', 'briefcase']" class="mr-1"/> Work Experience</nuxt-link>
       <nuxt-link class="block sm:inline-block sm:ml-2 px-2 py-1 font-semibold hover:text-white focus:text-white" to="/projects"><font-awesome-icon :icon="['fas', 'archive']" class="mr-1"/> Projects</nuxt-link>
       <nuxt-link class="block sm:inline-block sm:ml-2 px-2 py-1 font-semibold hover:text-white focus:text-white" to="/open-source"><font-awesome-icon :icon="['fas', 'code']" class="mr-1"/> Open Source</nuxt-link>
+      <nuxt-link class="block sm:inline-block sm:ml-2 px-2 py-1 font-semibold hover:text-white focus:text-white" to="/tech-stack"><font-awesome-icon :icon="['fas', 'layer-group']" class="mr-1"/> Tech Stack</nuxt-link>
       <nuxt-link class="block sm:inline-block sm:ml-2 px-2 py-1 font-semibold hover:text-white focus:text-white" to="/contact"><font-awesome-icon :icon="['far', 'envelope']" class="mr-1"/> Contact</nuxt-link>
     </div>
   </header>

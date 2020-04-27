@@ -70,7 +70,7 @@ export default {
 
   fontawesome: {
     icons: {
-      solid: ['faBars', 'faTimes', 'faBriefcase', 'faArchive', 'faCode', 'faGlobe'],
+      solid: ['faBars', 'faTimes', 'faBriefcase', 'faArchive', 'faCode', 'faGlobe', 'faLayerGroup'],
       regular: ['faEnvelope'],
       brands: ['faTwitter', 'faGithub', 'faLinkedinIn']
     }
