@@ -2,6 +2,13 @@
   <div class="flex justify-center bg-white py-10 px-6 content text-sm sm:text-base md:text-base">
     <div>
       <p class="italic pb-6 text-xs sm:text-sm text-gray-600">* Please note that some links might be dead or have changed.</p>
+      
+      <div class="mb-6">
+        <h1>combine.sg — 2020</h1>
+        <h3><a href="https://www.combine.sg/">combine.sg</a></h3>
+        <p>Part of the team, building combine.sg: frontend & admin dashboard.</p>
+        <p class="tech-stack"><span>Tech Stack:</span> PHP 7, Laravel 7, MySQL, Vue.js, Bootstrap</p>
+      </div>
 
       <div class="mb-6">
         <h1>restock.id — 2019 - 2020</h1>
