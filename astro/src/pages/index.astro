@@ -1,0 +1,56 @@
+---
+import Layout from "../layouts/Layout.astro";
+import profilePic from "../assets/kusmayadi.jpeg";
+import { getImage, Image } from "astro:assets";
+---
+
+<Layout>
+    <section class="flex flex-col">
+        <h1 class="text-5xl mb-7">Hello World</h1>
+        <div class="">
+            <div class="relative w-80 h-80 overflow-hidden rounded-full shadow-xl float-right ml-4">
+                <Image src={profilePic} alt="Kusmayadi" />
+            </div>
+            <p class="mb-5">
+                Mauris ac massa pellentesque, dapibus quam eget, dapibus erat.
+                Aenean non consequat nibh. Fusce efficitur iaculis turpis, sed
+                euismod ipsum bibendum sit amet. Maecenas vulputate, nibh sed
+                mattis lobortis, tortor velit egestas est, at semper lectus
+                tellus vitae dui. Pellentesque eget laoreet enim, id semper
+                urna. Suspendisse sit amet suscipit erat, in tristique metus.
+                Phasellus ac porta neque. Interdum et malesuada fames ac ante
+                ipsum primis in faucibus. Maecenas porttitor non sem eu
+                tristique. Integer sagittis bibendum odio. Proin varius
+                pellentesque est, semper faucibus risus mollis a. Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere
+                cubilia curae.
+            </p>
+
+            <p class="mb-5">
+                Proin et lectus placerat, ultrices orci eu, auctor orci. Sed
+                vitae nibh vitae metus varius tincidunt. Nulla leo risus,
+                eleifend vitae placerat id, fermentum ut libero. Quisque
+                imperdiet lectus non tellus aliquet eleifend. Integer bibendum,
+                ante ut porttitor dictum, mi urna sodales augue, id tincidunt
+                massa purus a risus. Proin viverra dignissim neque ac iaculis.
+                Morbi eu interdum eros. Cras lobortis semper volutpat.
+                Pellentesque nec turpis at ipsum sodales auctor nec in enim. In
+                malesuada placerat dolor sollicitudin elementum. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+
+            <p class="mb-5">
+                Proin et lectus placerat, ultrices orci eu, auctor orci. Sed
+                vitae nibh vitae metus varius tincidunt. Nulla leo risus,
+                eleifend vitae placerat id, fermentum ut libero. Quisque
+                imperdiet lectus non tellus aliquet eleifend. Integer bibendum,
+                ante ut porttitor dictum, mi urna sodales augue, id tincidunt
+                massa purus a risus. Proin viverra dignissim neque ac iaculis.
+                Morbi eu interdum eros. Cras lobortis semper volutpat.
+                Pellentesque nec turpis at ipsum sodales auctor nec in enim. In
+                malesuada placerat dolor sollicitudin elementum. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+        </div>
+    </section></Layout
+>

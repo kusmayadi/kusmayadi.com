@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro Basics</title>
+    </head>
+    <body class="bg-[#2e3440] text-gray-300">
+        <div class="relative min-h-screen py-5 flex flex-col">
+            <header
+                class="mx-auto container sticky top-0 z-50 rounded-3xl shadow-2xl bg-[#4c566a] text-[#e5e9f0] py-3 px-5 flex justify-between items-end"
+            >
+                <div>kusmayadi</div>
+                <ul class="flex items-center space-x-3">
+                    <li>work experience</li>
+                    <li>projects</li>
+                    <li>open source projects</li>
+                    <li>tech stack</li>
+                </ul>
+            </header>
+
+            <div class="container mx-auto mt-9 min-h-full relative flex-1 bg-[#eceff4] py-7 px-9 text-[#3b4252] rounded-lg flex items-center justify-center">
+                <slot />
+            </div>
+        </div>
+    </body>
+</html>
