@@ -1,0 +1,39 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+const projects = await getCollection("projects");
+---
+
+<Layout>
+    <section
+        class="flex flex-col bg-[#eceff4] w-full rounded-lg py-7 px-9 text-[#3b4252]"
+    >
+        <h1 class="mb-7">Projects</h2>
+        <p class="italic pb-6 text-xs sm:text-sm text-gray-600"> * Please note that some links might be not available anymore or have changed.</p>
+
+        <div class="grid grid-cols-2 gap-7">
+            {
+                projects.map((project) => (
+                    <div class="mb-6 project-item">
+                        <h2>
+                            {project.data.name} — {project.data.year}
+                        </h2>
+                        {project.data.website && (
+                            <h4>
+                                <a href={project.data.website.url}>
+                                    {project.data.website.title}
+                                </a>
+                            </h4>
+                        )}
+                        <p set:html={project.data.description} />
+                        <p class="tech-stack">
+                            <span>Tech Stack:</span>
+                            <span set:html={project.data.techStack}>
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+</Layout>

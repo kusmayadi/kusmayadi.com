@@ -1,0 +1,227 @@
+{
+  "stacks": [
+    {
+      "id": "php",
+      "name": "PHP",
+      "image": "php.svg",
+      "url": "https://www.php.net/"
+    },
+
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "image": "laravel.svg",
+      "url": "https://laravel.com/"
+    },
+
+    {
+      "id": "filament",
+      "name": "Filament",
+      "image": "filament.svg",
+      "url": "https://filamentphp.com/"
+    },
+
+    {
+      "id": "composer",
+      "name": "Composer",
+      "image": "composer.svg",
+      "url": "https://getcomposer.org/"
+    },
+
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "image": "nodejs.svg",
+      "url": "https://nodejs.org/"
+    },
+
+    {
+      "id": "npm",
+      "name": "npm",
+      "image": "npm.svg",
+      "url": "https://www.npmjs.com/"
+    },
+
+    {
+      "id": "sails",
+      "name": "Sails",
+      "image": "sails.svg",
+      "url": "https://sailsjs.com/"
+    },
+
+    {
+      "id": "astro",
+      "name": "Astro",
+      "image": "astro-icon-dark.svg",
+      "url": "https://astro.build/"
+    },
+
+    {
+      "id": "nuxt",
+      "name": "Nuxt",
+      "image": "nuxt.svg",
+      "url": "https://nuxtjs.org/"
+    },
+
+    {
+      "id": "vuejs",
+      "name": "Vue.js",
+      "image": "vue.svg",
+      "url": "https://nextjs.org/"
+    },
+
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "image": "next-js.svg",
+      "url": "https://vuejs.org/"
+    },
+
+    {
+      "id": "jquery",
+      "name": "jQuery",
+      "image": "jquery.svg",
+      "url": "https://jquery.com/"
+    },
+
+    {
+      "id": "tailwind",
+      "name": "tailwindcss",
+      "image": "tailwindcss-icon.svg",
+      "url": "https://tailwindcss.com/"
+    },
+
+    {
+      "id": "bootstrap",
+      "name": "Bootstrap",
+      "image": "bootstrap.svg",
+      "url": "https://getbootstrap.com/"
+    },
+
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "image": "mysql.svg",
+      "url": "https://www.mysql.com/"
+    },
+
+    {
+      "id": "redis",
+      "name": "redis",
+      "image": "redis.svg",
+      "url": "https://redis.io/"
+    },
+
+    {
+      "id": "aws",
+      "name": "AWS",
+      "image": "aws.svg",
+      "url": "https://aws.amazon.com/"
+    },
+
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "image": "digital-ocean.svg",
+      "url": "https://www.digitalocean.com/"
+    },
+
+    {
+      "id": "nginx",
+      "name": "NGINX",
+      "image": "nginx.svg",
+      "url": "https://www.nginx.com/"
+    },
+
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "image": "ansible.svg",
+      "url": "https://www.ansible.com/"
+    },
+
+    {
+      "id": "vagrant",
+      "name": "Vagrant",
+      "image": "vagrant.svg",
+      "url": "https://www.vagrantup.com/"
+    },
+
+    {
+      "id": "atom",
+      "name": "Atom",
+      "image": "atom.svg",
+      "url": "https://atom.io/"
+    },
+
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "image": "visual-studio-code.svg",
+      "url": "https://code.visualstudio.com/"
+    },
+
+    {
+      "id": "git",
+      "name": "git",
+      "image": "git-icon.svg",
+      "url": "https://git-scm.com/"
+    },
+
+    {
+      "id": "github",
+      "name": "GitHub",
+      "image": "github-icon.svg",
+      "url": "https://github.com/"
+    },
+
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "image": "gitlab.svg",
+      "url": "https://about.gitlab.com/"
+    },
+
+    {
+      "id": "bitbucket",
+      "name": "Bitbucket",
+      "image": "bitbucket.svg",
+      "url": "https://bitbucket.org/"
+    },
+
+    {
+      "id": "pivotaltracker",
+      "name": "Pivotal Tracker",
+      "image": "pivotal_tracker.svg",
+      "url": "https://www.pivotaltracker.com/"
+    },
+
+    {
+      "id": "trello",
+      "name": "Trello",
+      "image": "trello.svg",
+      "url": "https://trello.com/"
+    },
+
+    {
+      "id": "slack",
+      "name": "Slack",
+      "image": "slack-icon.svg",
+      "url": "https://slack.com/"
+    },
+
+    {
+      "id": "macos",
+      "name": "macOS",
+      "image": "macOS.svg",
+      "url": "https://www.apple.com/id/macos"
+    },
+
+    {
+      "id": "ubuntu",
+      "name": "Ubuntu",
+      "image": "ubuntu.svg",
+      "url": "https://ubuntu.com/"
+    }
+  ]
+}

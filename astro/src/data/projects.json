@@ -1,0 +1,564 @@
+{
+  "projects": [
+    {
+      "id": "prj-combine",
+      "name": "combine.sg",
+      "year": "2020",
+      "website": {
+        "title": "combine.sg",
+        "url": "https://www.combine.sg/"
+      },
+      "description": [
+        "Part of the team, building combine.sg: frontend & admin dashboard."
+      ],
+      "techStack": ["PHP 7, Laravel 7, MySQL, Vue.js, Bootstrap"]
+    },
+
+    {
+      "id": "prj-restock",
+      "name": "restock.id",
+      "year": "2019 - 2020",
+      "website": {
+        "title": "restock.id",
+        "url": "https://restock.id"
+      },
+      "description": [
+        "Build website & dashboard for restock.id for managing lender & borrower, request loan, apply as borrower & integrating with third parties."
+      ],
+      "techStack": ["PHP 7, Laravel 6, MySQL"]
+    },
+
+    {
+      "id": "prj-brodo",
+      "name": "bro.do",
+      "year": "2016 - 2019",
+      "website": {
+        "title": "bro.do",
+        "url": "https://bro.do"
+      },
+      "description": [
+        "Build ecommerce system & POS for bro.do, including integration with warehouse system &amp; payment gateway, system architecture, and deployment scripts."
+      ],
+      "techStack": [
+        "PHP 5, Laravel 6, MySQL, React, Go, AWS, ansible, terraform"
+      ]
+    },
+
+    {
+      "id": "prj-brambang",
+      "name": "brambang.com",
+      "year": "2016",
+      "website": {
+        "title": "brambang.com",
+        "url": "https://brambang.com"
+      },
+      "description": [
+        "Build ecommerce system for brambang.com, including system architecture, deployment scripts."
+      ],
+      "techStack": ["Node.js, sails.js, Angular, ansible, MySQL, AWS"]
+    },
+
+    {
+      "id": "prj-pikmiap",
+      "name": "Pikmiap",
+      "year": "2016",
+      "website": {
+        "title": "pikmiap.com",
+        "url": "https://pikmiap.com"
+      },
+      "description": [
+        "Build dashboard for ordering courier delivery & managing order, including integrated with third parties."
+      ],
+      "techStack": ["PHP 5, Laravel 5, MySQL, jQuery, DigitalOcean"]
+    },
+
+    {
+      "id": "prj-lv8",
+      "name": "LV8.tv",
+      "year": "2013 - 2016",
+      "website": {
+        "title": "lv8.tv",
+        "url": "https://lv8.tv"
+      },
+      "description": [
+        "Build video platform system. Develop API, video transcoder."
+      ],
+      "techStack": [
+        "PHP 5, Laravel 4, MySQL, Node.js, sails.js, video.js, AWS, CDN"
+      ]
+    },
+
+    {
+      "id": "prj-liputan6",
+      "name": "Liputan6",
+      "year": "2013",
+      "website": {
+        "title": "liputan6.com",
+        "url": "https://liputan6.com/"
+      },
+      "description": ["Build new CMS system for liputan6.com."],
+      "techStack": ["PHP 5, Laravel 4, Selenium, MySQL, jQuery"]
+    },
+
+    {
+      "id": "prj-multiply",
+      "name": "Multiply",
+      "year": "2012 - 2013",
+      "website": {
+        "title": "multiply.com",
+        "url": "https://multiply.com/"
+      },
+      "description": ["Build e-commerce system."],
+      "techStack": ["PHP 5, Symfony, MySQL, jQuery"]
+    },
+
+    {
+      "id": "prj-beautique-clinic",
+      "name": "Beautique Clinic",
+      "year": "2012",
+      "website": {
+        "title": "beautiqueclinic.com",
+        "url": " http://beautiqueclinic.com/"
+      },
+      "description": ["Developed website for Beautique Clinic."],
+      "techStack": ["PHP 5, Kohana 3.2.0, MySQL, jQuery"]
+    },
+
+    {
+      "id": "prj-convrrt",
+      "name": "Convrrt",
+      "year": "2012",
+      "website": {
+        "title": "mobileconvrrt.com",
+        "url": "http://mobileconvrrt.com/"
+      },
+      "description": [
+        "Add some functionalities to existing sites, including: integration with Facebook, Twitter & Pinterest. Fixed some bugs on existing site."
+      ],
+      "techStack": ["PHP 5, Kohana 3.2.0, MySQL, jQuery"]
+    },
+
+    {
+      "id": "prj-earthway",
+      "name": "Earthway",
+      "year": "2012",
+      "website": {
+        "title": "earthway.com",
+        "url": "http://www.earthway.com"
+      },
+      "description": ["Customized Vendo e-commerce system."],
+      "techStack": ["PHP 5, Kohana 3.2.0, MySQL, jQuery"]
+    },
+
+    {
+      "id": "prj-las-cholas-en-japon",
+      "name": "Las Cholas En Japon",
+      "year": "2011",
+      "website": {
+        "title": "lascholasenjapon.com",
+        "url": "http://www.lascholasenjapon.com"
+      },
+      "description": ["Website development"],
+      "techStack": ["PHP 5, Kohana 3.2.0, MySQL, jQuery"]
+    },
+
+    {
+      "id": "prj-baliplus",
+      "name": "Bali Plus for Ipad",
+      "year": "2011",
+      "website": {
+        "title": "Apple App Store",
+        "url": "http://itunes.apple.com/us/app/bali-plus/id439210837"
+      },
+      "description": ["iPad app development"],
+      "techStack": ["Appcelerator Titanium, Javascript"]
+    },
+
+    {
+      "id": "prj-neokurio",
+      "name": "Neokurio",
+      "year": "2011",
+      "website": {
+        "title": "neokurio.com",
+        "url": "http://www.neokurio.com"
+      },
+      "description": ["Website development"],
+      "techStack": ["PHP 5, Kohana 3.1.3.1, MySQL, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-liveunsigned",
+      "name": "LiveUnsigned",
+      "year": "2010-2011",
+      "website": {
+        "title": "liveunsigned.com",
+        "url": "http://www.liveunsigned.com"
+      },
+      "description": [
+        "Improvement & enhancement on the existing system, including fixing some bugs."
+      ],
+      "techStack": ["PHP 5, Kohana 2.3.4, MySQL, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-wisatadewata",
+      "name": "Wisata Dewata",
+      "year": "2010-2011",
+      "website": {
+        "title": "wisatadewata.com",
+        "url": "http://www.wisatadewata.com"
+      },
+      "description": ["Web applications development"],
+      "techStack": ["PHP 5, Kohana 3.0.7, MySQL, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-fb-pages",
+      "name": "Facebook Pages",
+      "year": "2010",
+      "description": [
+        "<div>PSD to Facebook Pages development</div>",
+        "Pages:",
+        "<ul>",
+        "    <li>",
+        "       <a href='http://www.facebook.com/pages/True-Image-Photography/110464739660'>",
+        "           True Image Photography",
+        "       </a>",
+        "    </li>",
+        "   <li>",
+        "        <a href='http://www.facebook.com/pages/American-Air-Campers-Association/108592692518343'>",
+        "           American Air Campers Association",
+        "        </a>",
+        "    </li>",
+        "    <li>",
+        "        <a href='http://www.facebook.com/keaneyevideo?sk=app_7146470109'>",
+        "           Kean Eye Video Services",
+        "        </a>",
+        "    </li>",
+        "    <li>",
+        "        <a href='http://www.facebook.com/capecoralkarate?v=app_4949752878'>",
+        "           Cape Coral Isshinryu Karate Academy",
+        "        </a>",
+        "    </li>",
+        "    <li>",
+        "        <a href='http://www.facebook.com/Stella?sk=app_169397313078933'>",
+        "           Stella Artois - Black, UK",
+        "        </a>",
+        "    <li>",
+        "        <a href='http://www.facebook.com/pages/Meridian-ID/Harmon-Chiropractic/235548913945'>",
+        "           Harmon Chiropractic",
+        "        </a>",
+        "    </li>",
+        "    <li>",
+        "        <a href='http://www.facebook.com/kemanaonlinestore?v=app_10442206389'>",
+        "           kemana.com - Di Mana Kamu? v.02 Video Upload Competition",
+        "        </a>",
+        "    </li>",
+        "    <li>",
+        "        <a href='http://www.facebook.com/gossipfusion?v=app_4949752878'>",
+        "           Gossip Fusion - Our Menu",
+        "        </a>",
+        "    </li>",
+        "</ul>"
+      ],
+      "techStack": ["HTML, CSS, FBML, FBJS"]
+    },
+
+    {
+      "id": "prj-sportowefakty",
+      "name": "Sportowefakty Admin Page",
+      "year": "2010",
+      "website": {
+        "title": "sportowefakty.pl",
+        "url": "http://www.sportowefakty.pl"
+      },
+      "description": ["Web applications development"],
+      "techStack": ["PHP 5, Kohana 2.3.4, MySQL, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-parliament-hill",
+      "name": "Parliament Hill Website",
+      "year": "2010",
+      "website": {
+        "title": "parliamenthillmusic.com",
+        "url": "http://www.parliamenthillmusic.com"
+      },
+      "description": [
+        "Website development, including WordPress Theme customization and plugin development."
+      ],
+      "techStack": ["PHP, WordPress, MySQL, jQuery"]
+    },
+
+    {
+      "id": "prj-kemana",
+      "name": "Kemana.com",
+      "year": "2009-2010",
+      "website": {
+        "title": "kemana.com",
+        "url": "http://www.kemana.com"
+      },
+      "description": [
+        "Magento customization development, including Magento custom modules development. PSD to HTML/CSS design conversion."
+      ],
+      "techStack": ["PHP 5, Magento, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-deefusion",
+      "name": "Deefusion",
+      "year": "2009",
+      "website": {
+        "title": "deefusion.com",
+        "url": "http://www.deefusion.com"
+      },
+      "description": [
+        "Web applications development. PSD to HTML/CSS design conversion."
+      ],
+      "techStack": ["PHP 5, Kohana 2.3.4, MySQL, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-tmt",
+      "name": "Think Math Tutoring",
+      "year": "2009",
+      "website": {
+        "title": "thinkmathtutoring.com",
+        "url": "http://www.thinkmathtutoring.com"
+      },
+      "description": ["Web applications development"],
+      "techStack": ["PHP 5, Kohana 2.3.4, MySQL, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-barudibali",
+      "name": "Baru Di Bali",
+      "year": "2009",
+      "website": {
+        "title": "barudibali.com",
+        "url": "http://www.barudibali.com"
+      },
+      "description": ["Web applications development"],
+      "techStack": ["PHP 5, CakePHP, MySQL, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-outoflimits",
+      "name": "Out Of Limits Website",
+      "year": "2009",
+      "website": {
+        "title": "outoflimits-bali.com",
+        "url": "http://www.outoflimits-bali.com"
+      },
+      "description": ["Website development"],
+      "techStack": ["PHP 5, Kohana 2.3, MySQL, jQuery, Apache"]
+    },
+
+    {
+      "id": "prj-24jam",
+      "name": "24jam.com Website",
+      "year": "2008-2009",
+      "website": {
+        "title": "24jam.com",
+        "url": "http://www.24jam.com"
+      },
+      "description": ["Web applications development"],
+      "techStack": ["PHP 5, Kohana 2.3, MySQL, jQuery, Bluetrip, Apache"]
+    },
+
+    {
+      "id": "prj-prepchannel",
+      "name": "Prep Channel",
+      "year": "2007-2008",
+      "website": {
+        "title": "prepchannel.com",
+        "url": "http://www.prepchannel.com"
+      },
+      "description": [
+        "Web applications development & modifications and customizing SocialEngine."
+      ],
+      "techStack": ["PHP, SocialEngine, Smarty, MySQL, Apache"]
+    },
+
+    {
+      "id": "prj-ciranjang",
+      "name": "Ciranjang Hospital Website",
+      "year": "2007",
+      "website": {
+        "title": "rsciranjang.com",
+        "url": "http://www.rsciranjang.com"
+      },
+      "description": ["Content Management & website development"],
+      "techStack": ["PHP 5, CodeIgniter, MySQL, Apache"]
+    },
+
+    {
+      "id": "prj-mobil46",
+      "name": "mobil46.com Website",
+      "year": "2007",
+      "website": {
+        "title": "mobil46.com",
+        "url": "http://www.mobil46.com"
+      },
+      "description": ["Forum & Advertising Banner Module development"],
+      "techStack": ["PHP 4, Fusebox 4, MySQL, Apache, SVN"]
+    },
+
+    {
+      "id": "prj-dik",
+      "name": "Dik’s Photography Website",
+      "year": "2006",
+      "website": {
+        "title": "diksphoto.com",
+        "url": "http://www.diksphoto.com"
+      },
+      "description": ["Content Management System & website development"],
+      "techStack": ["PHP 4, Fusebox 4, MySQL, Apache"]
+    },
+
+    {
+      "id": "prj-mobile3845",
+      "name": "Multimedia Download for mobile3845.com",
+      "year": "2006",
+      "website": {
+        "title": "mobile3845.com",
+        "url": "http://www.mobile3845.com"
+      },
+      "description": [
+        "Multimedia mobile content (ringtones, wallpaper, themes, etc) application development."
+      ],
+      "techStack": ["PHP 4, Fusebox 4, PostgreSQL, Apache"]
+    },
+
+    {
+      "id": "prj-saywire",
+      "name": "Saywire",
+      "year": "2005-2009",
+      "website": {
+        "title": "saywire.com",
+        "url": "http://www.saywire.com"
+      },
+      "description": [
+        "Social networking applications development, including: image gallery, enotes, guestbook, discussions, blog, etc."
+      ],
+      "techStack": ["PHP 4, Fusebox 4, MySQL, Apache, SVN, jQuery"]
+    },
+
+    {
+      "id": "prj-ditjora",
+      "name": "Direktorat Jendral Olahraga",
+      "year": "2004",
+      "website": {
+        "title": "www.ditjora.web.id",
+        "url": "http://www.ditjora.web.id"
+      },
+      "description": ["Content Management System & Website development."],
+      "techStack": ["PHP 4, Fusebox 3, MySQL, Apache"]
+    },
+
+    {
+      "id": "prj-jagatmedia",
+      "name": "Jagat Media SMS",
+      "year": "2003",
+      "description": [
+        "Content Management System & mobile applications (text/sms based) development, including: magazine subscriptions, ad placement, quiz, etc."
+      ],
+      "techStack": ["PHP 4, Fusebox 3, MySQL, Apache, Kannel"]
+    },
+
+    {
+      "id": "prj-artefactor",
+      "name": "Artefactor Website",
+      "year": "2003",
+      "description": ["Content Management System & Website development."],
+      "techStack": ["PHP 4, Fusebox 3, MySQL, Apache"]
+    },
+
+    {
+      "id": "prj-detikmobile",
+      "name": "Detik.com Mobile Content Application (Text/Sms Based)",
+      "year": "2001-2004",
+      "website": {
+        "title": "detik.com",
+        "url": "https://detik.com"
+      },
+      "description": [
+        "<ul>",
+        "    <li>",
+        "        Content Management System development for updating SMS content",
+        "    </li>",
+        "    <li>",
+        "       Application gateway development to manage SMS request passed by cellular operator through HTTP & SMPP protocols",
+        "    </li>",
+        "    <li>",
+        "        Mobile content applications development, including: news, polling, chat, astrology, ringtones, etc.",
+        "    </li>",
+        "</ul>"
+      ],
+      "techStack": [
+        "<ul>",
+        "    <li>",
+        "       First version: PHP 4, Fusebox 3, MySQL, Apache, Kannel",
+        "    </li>",
+        "    <li>",
+        "        Latest version: PHP 4, Fusebox 4, MySQL, Apache, Kannel",
+        "    </li>",
+        "</ul>"
+      ]
+    },
+
+    {
+      "id": "prj-detikjahex",
+      "name": "Detik.com WBNS a.k.a Jahex (Web Based News Station)",
+      "year": "1999-2001",
+      "website": {
+        "title": "detik.com",
+        "url": "https://detik.com"
+      },
+      "description": [
+        "Content Management System &amp; web application development for detik.com, including: news, polling, forum, astrology, membership, etc."
+      ],
+      "techStack": [
+        "<ul>",
+        "    <li>",
+        "      First version: ColdFusion, Fusebox 3, MSQL, IIS Server",
+        "    </li>",
+        "    <li>",
+        "      Latest version: PHP 4, Fusebox 4, MySQL, Apache",
+        "    </li>",
+        "</ul>"
+      ]
+    },
+
+    {
+      "id": "prj-intisari",
+      "name": "Editorial Work Flow System For Intisari Magazine (Intranet)",
+      "year": "1996",
+      "description": [
+        "Editorial Work Flow System for Intisari Magazine development"
+      ],
+      "techStack": ["ColdFusion, IIS Server, MS Access"]
+    },
+
+    {
+      "id": "prj-staticweb",
+      "name": "Static Website Projects",
+      "year": "1995-2000",
+      "description": [
+        "Static page websites development.",
+        "<ul>",
+        "   <li>",
+        "     <a href='http://www.bankjaya.com' target='portfolio'>Bank Jaya</a>",
+        "    </li>",
+        "    <li>",
+        "     <a href='http://www.pttimah.com' target='portfolio'>PT Timah</a>",
+        "    </li>",
+        "    <li>",
+        "     <a href='http://www.bintang.com'>Tabloid Bintang Indonesia</a>",
+        "    </li>",
+        "</ul>"
+      ],
+      "techStack": ["HTML"]
+    }
+  ]
+}
