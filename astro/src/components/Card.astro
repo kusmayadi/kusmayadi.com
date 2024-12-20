@@ -1,0 +1,27 @@
+---
+const { backgroundClass, title, url } = Astro.props;
+---
+
+<a
+    href={url}
+    class=`${backgroundClass} rounded-lg min-h-64 min-w-72 py-5 px-7 relative cursor-pointer`
+>
+    <h1 class="text-5xl">{title}</h1>
+
+    <div class="mt-7">
+        <slot />
+    </div>
+
+    <div class="absolute bottom-5">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 h-10 text-gray-300"
+            viewBox="0 0 25 25"
+        >
+            <path
+                style="fill:rgb(209 213 219 / var(--tw-text-opacity, 1))"
+                d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                data-name="Right"></path>
+        </svg>
+    </div>
+</a>
