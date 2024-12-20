@@ -1,0 +1,23 @@
+h1 {
+    @apply text-5xl;
+}
+
+h2 {
+    @apply text-xl font-semibold;
+}
+
+h3 {
+    @apply text-lg font-semibold;
+}
+
+h4 {
+    @apply text-lg font-medium;
+}
+
+.project-item ul {
+    @apply list-inside;
+}
+
+.project-item ul li {
+    @apply list-disc;
+}
