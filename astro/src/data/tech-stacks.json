@@ -29,6 +29,13 @@
     },
 
     {
+      "id": "typescript",
+      "name": "Typescript",
+      "image": "ts-logo.svg",
+      "url": "https://www.typescriptlang.org/"
+    },
+
+    {
       "id": "nodejs",
       "name": "Node.js",
       "image": "nodejs.svg",
