@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image, Picture } from "astro:assets";
+import linkedInLogo from "../assets/linkedin.png";
+import githubLogo from "../assets/github-mark.png";
+import xLogo from "../assets/x-logo-black.png";
+---
+
+<Layout>
+    <section
+        class="flex flex-col bg-[#eceff4] w-full rounded-lg py-7 px-9 text-[#3b4252]"
+    >
+        <h1 class="mb-7">Contact Me</h1>
+        <p class="mb-7">You can contact me through my social media channel:</p>
+
+        <div class="flex text-sm sm:text-4xl py-4 gap-6">
+            <a href="https://www.linkedin.com/in/kusmayadi/" target="linkedin"
+                ><Image
+                    src={linkedInLogo}
+                    alt="LinkedIn"
+                    class="h-20 w-full"
+                /></a
+            >
+
+            <a href="https://github.com/kusmayadi" target="github"
+                ><Picture src={githubLogo} alt="github" class="h-20 w-full" />
+            </a>
+            <a href="https://twitter.com/kusmayadi" target="twitter"
+                ><Picture src={xLogo} alt="X" class="h-20 w-full" /></a
+            >
+        </div>
+    </section>
+</Layout>
