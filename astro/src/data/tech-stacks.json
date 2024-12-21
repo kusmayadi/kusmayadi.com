@@ -29,6 +29,13 @@
     },
 
     {
+      "id": "javascript",
+      "name": "Javascript",
+      "image": "logo-javascript.svg",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+
+    {
       "id": "typescript",
       "name": "Typescript",
       "image": "ts-logo.svg",
