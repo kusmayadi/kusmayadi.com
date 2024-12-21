@@ -21,3 +21,7 @@ h4 {
 .project-item ul li {
     @apply list-disc;
 }
+
+.icon-nav {
+    @apply rounded-lg relative cursor-pointer w-9 h-9 flex items-center justify-center shadow-2xl;
+}
