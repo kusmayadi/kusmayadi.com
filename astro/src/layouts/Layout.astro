@@ -2,6 +2,8 @@
 import "../styles/global.css";
 import Nav from "../components/Nav.astro";
 
+const { title } = Astro.props;
+
 const currentPath = Astro.url.pathname;
 ---
 
@@ -12,7 +14,7 @@ const currentPath = Astro.url.pathname;
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
-        <title>Astro Basics</title>
+        <title>{title}</title>
     </head>
     <body class="bg-[#2e3440] text-gray-300">
         <div class="relative min-h-screen py-5 flex flex-col">
