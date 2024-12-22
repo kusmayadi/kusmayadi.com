@@ -4,9 +4,9 @@ const { backgroundClass, title, url } = Astro.props;
 
 <a
     href={url}
-    class=`${backgroundClass} rounded-lg min-h-64 min-w-72 py-5 px-7 relative cursor-pointer`
+    class=`${backgroundClass} rounded-lg min-h-40 md:min-h-64 md:min-w-72 py-3 md:py-5 px-5 md:px-7 relative cursor-pointer`
 >
-    <h1 class="text-5xl">{title}</h1>
+    <h1 class="text-2xl md:text-5xl">{title}</h1>
 
     <div class="mt-7">
         <slot />
@@ -15,7 +15,7 @@ const { backgroundClass, title, url } = Astro.props;
     <div class="absolute bottom-5">
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-10 h-10 text-gray-300"
+            class="w-7 h-7 md:w-10 md:h-10 text-gray-300"
             viewBox="0 0 25 25"
         >
             <path

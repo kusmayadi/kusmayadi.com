@@ -1,19 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import profilePic from "../assets/kusmayadi.jpeg";
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 ---
 
 <Layout title="About Kusmayadi">
     <section
-        class="flex flex-col bg-[#eceff4] w-full rounded-lg py-7 px-9 text-[#3b4252]"
+        class="flex flex-col bg-[#eceff4] w-full rounded-lg py-7 px-9 text-[#3b4252] text-sm md:text-base"
     >
-        <h1 class="text-5xl mb-7">Hello World</h1>
+        <h1 class="mb-7">Hello World</h1>
         <div>
             <div
-                class="relative w-80 h-80 overflow-hidden rounded-full shadow-xl float-right ml-4"
+                class="relative lg:w-80 lg:h-80 w-28 h-28 overflow-hidden rounded-full shadow-xl float-right ml-4"
             >
-                <Image src={profilePic} alt="Kusmayadi" />
+                <Picture src={profilePic} alt="Kusmayadi" />
             </div>
             <p class="mb-5">
                 Mauris ac massa pellentesque, dapibus quam eget, dapibus erat.

@@ -1,17 +1,17 @@
 h1 {
-    @apply text-5xl;
+    @apply lg:text-5xl text-3xl;
 }
 
 h2 {
-    @apply text-xl font-semibold;
+    @apply lg:text-xl text-lg font-semibold;
 }
 
 h3 {
-    @apply text-lg font-semibold;
+    @apply lg:text-lg text-base font-semibold;
 }
 
 h4 {
-    @apply text-lg font-medium;
+    @apply lg:text-lg text-base font-medium;
 }
 
 .project-item ul {

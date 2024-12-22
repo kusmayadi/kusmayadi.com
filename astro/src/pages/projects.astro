@@ -7,10 +7,13 @@ const projects = await getCollection("projects");
 
 <Layout title="Projects">
     <section
-        class="flex flex-col bg-[#eceff4] w-full rounded-lg py-7 px-9 text-[#3b4252]"
+        class="flex flex-col bg-[#eceff4] w-full rounded-lg py-7 px-9 text-[#3b4252] text-sm md:text-base"
     >
-        <h1 class="mb-7">Projects</h2>
-        <p class="italic pb-6 text-xs sm:text-sm text-gray-600"> * Please note that some links might be not available anymore or have changed.</p>
+        <h1 class="mb-7">Projects</h1>
+        <p class="italic pb-6 text-xs sm:text-sm text-gray-600">
+            * Please note that some links might be not available anymore or have
+            changed.
+        </p>
 
         <div class="grid grid-cols-2 gap-7">
             {
@@ -29,7 +32,7 @@ const projects = await getCollection("projects");
                         <p set:html={project.data.description} />
                         <p class="tech-stack">
                             <span>Tech Stack:</span>
-                            <span set:html={project.data.techStack}>
+                            <span set:html={project.data.techStack} />
                         </p>
                     </div>
                 ))
