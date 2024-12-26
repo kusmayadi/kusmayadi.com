@@ -92,6 +92,13 @@
     },
 
     {
+      "id": "reactjs",
+      "name": "React",
+      "image": "react.svg",
+      "url": "https://react.dev/"
+    },
+
+    {
       "id": "jquery",
       "name": "jQuery",
       "image": "jquery.svg",
