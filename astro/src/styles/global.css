@@ -1,27 +1,29 @@
+@import "tailwindcss";
+
 h1 {
-    @apply lg:text-5xl text-3xl;
+  @apply lg:text-5xl text-3xl;
 }
 
 h2 {
-    @apply lg:text-xl text-lg font-semibold;
+  @apply lg:text-xl text-lg font-semibold;
 }
 
 h3 {
-    @apply lg:text-lg text-base font-semibold;
+  @apply lg:text-lg text-base font-semibold;
 }
 
 h4 {
-    @apply lg:text-lg text-base font-medium;
+  @apply lg:text-lg text-base font-medium;
 }
 
 .project-item ul {
-    @apply list-inside;
+  @apply list-inside;
 }
 
 .project-item ul li {
-    @apply list-disc;
+  @apply list-disc;
 }
 
 .icon-nav {
-    @apply rounded-lg relative cursor-pointer w-9 h-9 flex items-center justify-center drop-shadow-[0_2px_4px_rgba(255,255,255,0.40)];
+  @apply rounded-lg relative cursor-pointer w-9 h-9 flex items-center justify-center drop-shadow-[0_2px_4px_rgba(255,255,255,0.40)];
 }
