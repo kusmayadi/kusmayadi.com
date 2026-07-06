@@ -1,0 +1,216 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "title": "Lead Developer",
+      "company": "Kororo",
+      "location": "Sydney, NSW, Australia &#183; Remote",
+      "date": "Aug 2023 - Jun 2026",
+      "jobDescription": [
+        "Led and coordinated the development team to ensure timely and high-quality project delivery.",
+        "Designed and developed scalable web applications tailored to client business requirements.",
+        "Collaborated closely with Project Managers, designers, and stakeholders to align technical execution with project goals.",
+        "Reviewed system architecture, optimized application performance, and ensured code quality through best practices.",
+        "Mentored developers by providing technical guidance, code reviews, and problem-solving support.",
+        "Reported project progress, technical risks, and development updates directly to the CEO."
+      ],
+      "tools": "Kentico, C#, Javascript, Typescript, React, Next.js, TailwindCSS, PHP, Drupal, git, docker, MySQL, Meilisearch, minIO, oodoo, JIRA"
+    },
+    {
+      "id": 2,
+      "title": "Full Stack Engineer",
+      "company": "VE Capital Asia",
+      "location": "Singapore &#183; Remote",
+      "date": "Jul 2020 - Mar 2023",
+      "jobDescription": [
+        "Developed and maintained end-to-end web applications for multiple client projects. Built responsive frontend interfaces and scalable backend systems using modern technologies.",
+        "Conducted pull request reviews to ensure clean, maintainable, and high-quality code standards.",
+        "Worked closely with cross-functional teams to translate business needs into technical solutions.",
+        "Improved application performance, security, and system reliability across projects.",
+        "Reported technical progress and development updates directly to the CTO."
+      ],
+      "tools": "PHP, Laravel, Vue, TailwindCSS, MySQL, git"
+    },
+    {
+      "id": 3,
+      "title": "CTO",
+      "company": "RestockID",
+      "location": "Jakarta, Indonesia",
+      "date": "Sep 2019 - Feb 2020",
+      "jobDescription": [
+        "Led the overall technology strategy and system architecture planning for the company.",
+        "Oversaw development, infrastructure, and system enhancement initiatives to support business growth.",
+        "Managed daily IT operations and coordinated cross-functional technical teams.",
+        "Evaluated and implemented scalable technology platforms and infrastructure improvements.",
+        "Ensured system stability, security, and performance optimization across all digital platforms.",
+        "Collaborated directly with executive leadership to align technology initiatives with business objectives."
+      ],
+      "tools": "PHP, Laravel, Vue, TailwindCSS, MySQL, Alibaba Cloud, PivotalTracker, git"
+    },
+    {
+      "id": 4,
+      "title": "CTO",
+      "company": "Brodo",
+      "location": "Jakarta, Indonesia",
+      "date": "Dec 2016 - Aug 2019",
+      "jobDescription": [
+        "Directed the end-to-end technology operations for e-commerce and retail business platforms.",
+        "Led the development of scalable systems including POS, warehouse integrations, and payment gateway integrations.",
+        "Defined technology roadmaps, infrastructure strategies, and deployment standards.",
+        "Managed engineering teams and ensured eﬃcient software development processes.",
+        "Improved operational eﬃciency through automation, system optimization, and cloud infrastructure implementation.",
+        "Partnered with business stakeholders to deliver technology solutions aligned with company growth objectives."
+      ],
+      "tools": "PHP, Laravel, React, TailwindCSS, Go, AWS, Ansible, Terraform, git"
+    },
+    {
+      "id": 5,
+      "title": "Lead Developer",
+      "company": "PT Bursa Interaktif Gemilang",
+      "location": "Jakarta, Indonesia",
+      "date": "Oct 2016 - Nov 2016",
+      "jobDescription": [
+        "Led and supervised the development team throughout the application development lifecycle.",
+        "Designed and developed scalable e-commerce applications and backend systems.",
+        "Coordinated technical implementation and ensured projects met business requirements and deadlines.",
+        "Conducted system planning, debugging, and performanceoptimization.",
+        "Collaborated with stakeholders"
+      ],
+      "tools": "Nodejs, sailsjs, Angular, MySQL, AWS, ansible, git"
+    },
+    {
+      "id": 6,
+      "title": "Lead Developer",
+      "company": "PT Pikmiap Express Global",
+      "location": "Jakarta, Indonesia",
+      "date": "Apr 2016 - Sep 2016",
+      "jobDescription": [
+        "Managed and guided developers in building and maintaining logistics and courier management systems.",
+        "Designed and developed dashboard systems for order management and third-party integrations.",
+        "Ensured system scalability, reliability, and smooth operational performance.",
+        "Collaborated with product and business teams to implement eﬃcient workflow solutions.",
+        "Provided technical leadership and reported directly to the CTO."
+      ],
+      "tools": "PHP, Laravel, jQuery, MySQL, git"
+    },
+    {
+      "id": 7,
+      "title": "CTO",
+      "company": "PT Laju Video Media",
+      "location": "Jakarta, Indonesia",
+      "date": "Nov 2013 - Apr 2016",
+      "jobDescription": [
+        "Led the technical team in developing and maintaining video streaming platforms and APIs.",
+        "Oversaw infrastructure planning, system scalability, and cloud-based deployment strategies. ",
+        "Managed product development initiatives to improve user experience and platform performance.",
+        "Coordinated with stakeholders to align technical execution with business objectives.",
+        "Supervised day-to-day IT operations and technology innovation initiatives."
+      ],
+      "tools": "Nodejs, sailsjs, MySQL, RabbitMQ, PHP, Laravel, AWS, ffmpeg, video.js, git"
+    },
+    {
+      "id": 8,
+      "title": "Manager - Web Developer",
+      "company": "PT Kreatif Media Karya",
+      "location": "Jakarta, Indonesia",
+      "date": "Jul 2013 - Oct 2016",
+      "jobDescription": [
+        "Managed and supervised web developer teams across multiple digital media projects.",
+        "Coordinated project timelines, resource allocation, and technical deliverables.",
+        "Ensured website stability, performance, and adherence to development standards.",
+        "Collaborated with internal departments to support business and editorial requirements.",
+        "Reported team progress and project updates to the IT Senior Manager."
+      ],
+      "tools": "PHP, Laravel, MySQL, jQuery, PivotalTracker, git"
+    },
+    {
+      "id": 9,
+      "title": "Supervisor, Mid Developer",
+      "company": "Multiply",
+      "location": "Jakarta, Indonesia",
+      "date": "Sep 2012 - May 2013",
+      "jobDescription": [
+        "Developed and enhanced internal systems and web applications.",
+        "Assisted junior developers through technical mentoring and troubleshooting support.",
+        "Collaborated with development teams to improve application functionality and user experience.",
+        "Participated in system maintenance, debugging, and feature enhancement initiatives.",
+        "Reported development activities and progress to the Development Manager."
+      ],
+      "tools": "PHP, Symfony, PostgreSQL, JIRA, git"
+    },
+    {
+      "id": 10,
+      "title": "Developer",
+      "company": "PT Trijaya Dewata",
+      "location": "Denpasar, Bali, Indonesia",
+      "date": "Aug 2011 - Aug 2012",
+      "jobDescription": [
+        "Developed and maintained mobile applications for iPad.",
+        "Maintained company websites and backend systems to ensure optimal performance.",
+        "Managed servers, deployments, and application updates.",
+        "Participated in the development of mobile application projects and digital solutions.",
+        "Collaborated directly with management and reported to the CEO."
+      ],
+      "tools": "PHP, Fat Free Framework, Javascript, Appcelerator Titanium"
+    },
+    {
+      "id": 11,
+      "title": "IT Developer",
+      "company": "Kemana.com",
+      "location": "Denpasar, Bali, Indonesia",
+      "date": "Nov 2009 - Jun 2010",
+      "jobDescription": [
+        "Customized Magento-based e-commerce systems according to business requirements.",
+        "Developed and maintained web applications and backend functionalities.",
+        "Managed server maintenance, deployments, and troubleshooting activities.",
+        "Created and maintained HTML-based newsletters and digital marketing assets.",
+        "Supported operational improvements through technical enhancements and automation."
+      ],
+      "tools": "PHP, Magento, Javascript, jQuery"
+    },
+    {
+      "id": 12,
+      "title": "Web Programmer",
+      "company": "PT Baru Di Bali",
+      "location": "Denpasar, Bali, Indonesia",
+      "date": "Jul 2009 - Oct 2009",
+      "jobDescription": [
+        "Designed, developed, and maintained web applications based on client requirements.",
+        "Managed server configurations, deployments, and routine maintenance activities.",
+        "Collaborated with stakeholders to enhance website functionality and user experience. ",
+        "Performed troubleshooting, debugging, and system performance optimization."
+      ],
+      "tools": "PHP, CakePHP, MySQL"
+    },
+    {
+      "id": 13,
+      "title": "Web Developer",
+      "company": "Saywire",
+      "location": "Phoenix, Arizona, USA &#183 Remote",
+      "date": "Aug 2006 - May 2009",
+      "jobDescription": [
+        "Developed and maintained dynamic web applications and platform features.",
+        "Managed database structures, optimization, and backend integrations.",
+        "Improved system functionality and user experience through ongoing enhancements.",
+        "Collaborated remotely with international teams to deliver project requirements.",
+        "Assisted in troubleshooting, maintenance, and application performance optimization."
+      ],
+      "tools": "PHP, PHP-Fusebox, MySQL, jQuery, Subversion"
+    },
+    {
+      "id": 14,
+      "title": "Development Supervisor",
+      "company": "detikcom",
+      "location": "Jakarta, Indonesia",
+      "date": "Nov 1995 - Aug 2006",
+      "jobDescription": [
+        "Progressed through multiple technical and leadership roles within one of Indonesia's largest digital media companies.",
+        "Developed and maintained web-based and mobile content applications supporting high-traffic news platforms.",
+        "Led development teams in delivering scalable digital products, including CMåS, mobile services, polling systems, forums, membership features, and SMS-based applications.",
+        "Conducted research and implementation of emerging technologies to improve platform performance and scalability.",
+        "Collaborated with cross-functional stakeholders to provide technical solutions aligned with business and editorial objectives."
+      ],
+      "tools": "ColdFusion, Fusebox, PHP, MySQL, SHTML, XML, Kannel SMS Gateway"
+    }
+  ]
+}

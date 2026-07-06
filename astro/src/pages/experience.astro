@@ -1,12 +1,101 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+interface Experience {
+    title: string;
+    company: string;
+    location: string;
+    date: string;
+    description: string;
+}
+
+const experiencesCollection = await getCollection("experiences");
+
+const experiences = experiencesCollection.sort(
+    (a, b) => parseInt(a.data.id) - parseInt(b.data.id),
+);
+console.log(experiences);
 ---
 
 <Layout title="Work Experiences" description="Kusmayadi's work experiences">
-    <section
-        class="flex flex-col bg-[#eceff4] w-full rounded-lg py-7 px-9 text-[#3b4252] text-sm md:text-base"
-    >
-        <h1 class="mb-7">Work Experiences</h1>
+    <section class="container mx-auto mt-24 text-content">
+        <ul class="timeline timeline-snap-icon timeline-vertical">
+            {
+                experiences.map((experience, index) => (
+                    <li>
+                        <div class="timeline-middle">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                                class="h-5 w-5"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                        </div>
+                        <div
+                            class:list={[
+                                "mb-10",
+                                { "timeline-start": index % 2 === 0 },
+                                { "text-end": index % 2 === 0 },
+                                {
+                                    "timeline-end": index % 2 !== 0,
+                                },
+                            ]}
+                        >
+                            <details class="collapse">
+                                <summary
+                                    class:list={[
+                                        "collapse-title py-0 px-0 tooltip tooltip-primary",
+                                        { "tooltip-right": index % 2 === 0 },
+                                        { "tooltip-left": index % 2 !== 0 },
+                                    ]}
+                                    data-tip="Click to see more details"
+                                >
+                                    <time class="font-mono italic">
+                                        {experience.data.date}
+                                    </time>
+                                    <div class="text-xl font-black">
+                                        {experience.data.title}
+                                    </div>
+                                    <div class="font-bold text-lg">
+                                        {experience.data.company}
+                                    </div>
+                                    <div
+                                        class="font-semibold font-sm"
+                                        set:html={experience.data.location}
+                                    />
+                                </summary>
+                                <div class="text-sm collapse-content pr-0 mt-5">
+                                    <ul class="list-disc list-inside">
+                                        {experience.data.jobDescription?.map(
+                                            (jobDesc) => (
+                                                <li>{jobDesc}</li>
+                                            ),
+                                        )}
+                                    </ul>
+                                    {experience.data.tools && (
+                                        <div class="mt-5 text-xs">
+                                            <span class="font-bold text-sm">
+                                                Tools/Frameworks:
+                                            </span>{" "}
+                                            {experience.data.tools}
+                                        </div>
+                                    )}
+                                </div>
+                            </details>
+                        </div>
+                        <hr />
+                    </li>
+                ))
+            }
+        </ul>
+        <!-- <h1 class="mb-7">Work Experiences</h1>
         <div class="md:grid md:grid-cols-2 md:gap-4">
             <div class="mb-4">
                 <h2>CTO</h2>
@@ -189,6 +278,6 @@ import Layout from "../layouts/Layout.astro";
                 <h4>Programmer</h4>
                 <div>Nov 1995 – Dec 1999</div>
             </div>
-        </div>
+        </div> -->
     </section>
 </Layout>
