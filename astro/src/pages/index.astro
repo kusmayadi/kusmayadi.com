@@ -1,36 +1,129 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 ---
 
 <Layout title="Kusmayadi" description="Kusmayadi's personal website">
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-        <Card title="About Me" url="/about-me" backgroundClass="bg-blue-500" />
-        <Card
-            title="Work Experiences"
-            url="/work-experience"
-            backgroundClass="bg-red-500"
-        />
-        <Card title="Projects" url="/projects" backgroundClass="bg-green-500" />
-        <Card
-            title="Tech Stack"
-            url="/tech-stack"
-            backgroundClass="bg-purple-600"
-        />
-        <!-- <Card
-            title="Open Source Projects"
-            url="/open-source-projects"
-            backgroundClass="bg-purple-600"
-        /> -->
-        <Card
-            title="Music"
-            url="https://soundcloud.com/kusmayadi"
-            backgroundClass="bg-orange-600"
-        />
-        <Card
-            title="Get in Touch"
-            url="/get-in-touch"
-            backgroundClass="bg-fuchsia-600"
-        />
+    <div
+        class="hero min-h-screen"
+        style="background-image: url(/images/cpu_city.png);"
+    >
+        <div class="hero-overlay"></div>
+        <div class="container text-neutral-content">
+            <div id="carousel" class="carousel w-full client:load">
+                <div
+                    id="item1"
+                    class="carousel-item w-full mb-12 text-6xl font-bold"
+                >
+                    Lead Developer
+                </div>
+                <div
+                    id="item2"
+                    class="carousel-item w-full mb-12 text-6xl font-bold"
+                >
+                    Laravel Expert
+                </div>
+                <div
+                    id="item3"
+                    class="carousel-item w-full mb-12 text-6xl font-bold"
+                >
+                    Building scalable web applications for over 25 years.
+                </div>
+            </div>
+        </div>
     </div>
+
+    <section class="container mx-auto my-10">
+        <div class="grid grid-cols-4 gap-20">
+            <div class="card w-96 bg-base-300 card-xl shadow-sm">
+                <div class="card-body flex-1 items-center justify-center">
+                    <span class="text-5xl">25+</span>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+
+            <div class="card w-96 bg-base-300 card-xl shadow-sm">
+                <div class="card-body flex-1 items-center justify-center">
+                    <span class="text-5xl">10+</span>
+                    <p>Years Laravel</p>
+                </div>
+            </div>
+
+            <div class="card w-96 bg-base-300 card-xl shadow-sm">
+                <div
+                    class="card-body text-center flex-1 items-center justify-center"
+                >
+                    <span class="text-5xl">100+</span>
+                    <p>Projects Delivered</p>
+                </div>
+            </div>
+
+            <div class="card w-96 bg-base-300 card-xl shadow-sm">
+                <div class="card-body flex-1 items-center justify-center">
+                    <span class="text-5xl">Remote Ready</span>
+                </div>
+            </div>
+        </div>
+    </section>
 </Layout>
+<script>
+    import { fade } from "astro:transitions";
+
+    // ---- Config ----
+    const CAROUSEL_ID = "carousel";
+    const INTERVAL_MS = 5000; // time between slides
+    const PAUSE_ON_HOVER = false;
+
+    // ---- Setup ----
+    const carousel = document.getElementById(CAROUSEL_ID);
+    let slides: Element[] | null[] = [];
+    if (carousel) {
+        slides = Array.from(carousel.querySelectorAll(".carousel-item"));
+    }
+
+    const playPauseBtn = document.getElementById("playPauseBtn");
+
+    let currentIndex = 0;
+    let timer: NodeJS.Timeout | number | string | undefined;
+    let isPlaying = true;
+
+    function goToSlide(index: number) {
+        if (carousel && slides.length === 0) return;
+        currentIndex = (index + slides.length) % slides.length;
+        slides[currentIndex]?.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "start",
+        });
+    }
+
+    function nextSlide() {
+        goToSlide(currentIndex + 1);
+    }
+
+    function startAutoplay() {
+        stopAutoplay(); // avoid duplicate timers
+        timer = setInterval(nextSlide, INTERVAL_MS);
+        isPlaying = true;
+        if (playPauseBtn) playPauseBtn.textContent = "Pause";
+    }
+
+    function stopAutoplay() {
+        clearInterval(timer);
+        isPlaying = false;
+        if (playPauseBtn) playPauseBtn.textContent = "Play";
+    }
+
+    playPauseBtn?.addEventListener("click", () => {
+        isPlaying ? stopAutoplay() : startAutoplay();
+    });
+
+    if (PAUSE_ON_HOVER) {
+        carousel?.addEventListener("mouseenter", stopAutoplay);
+        carousel?.addEventListener("mouseleave", () => {
+            if (!timer) startAutoplay();
+        });
+    }
+
+    // init
+    startAutoplay();
+</script>
