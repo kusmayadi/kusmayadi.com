@@ -1,4 +1,18 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "nordic";
+  default: true;
+
+  --color-base-100: oklch(32.4% 0.023 264.2);
+  --color-base-200: oklch(37.9% 0.029 266.5);
+  --color-base-300: oklch(41.6% 0.032 264.1);
+  --color-base-content: oklch(95.1% 0.007 260.7);
+  --color-primary: oklch(45.2% 0.035 264.1);
+  --color-primary-content: oklch(95.1% 0.007 260.7);
+  --color-secondary: oklch(69.7% 0.059 248.7);
+  --color-accent: oklch(59.4% 0.077 254);
+}
 
 h1 {
   @apply lg:text-5xl text-3xl;
