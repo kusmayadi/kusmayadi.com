@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+
+const techStacks = await getCollection("techStacks");
+console.log(techStacks);
+---
+
+<Layout title="Tech Stack" description="List of tech stacks Kusmayadi use.">
+    <section class="container mx-auto my-20">
+        {
+            techStacks.map((stack) => (
+                <div class="mt-10">
+                    <div class="divider text-3xl mb-10">{stack.data.name}</div>
+                    <div class="grid grid-cols-4 gap-8">
+                        {stack.data.techStacks.map((tech) => (
+                            <a
+                                href={tech.url}
+                                class="hover-3d"
+                                target="techstack"
+                            >
+                                <div class="card card-lg bg-base-300 text-center">
+                                    <div class="card-body">
+                                        {tech.icon && (
+                                            <Icon
+                                                name={tech.icon}
+                                                class="w-15 h-15 mx-auto"
+                                            />
+                                        )}
+                                        <h3>{tech.name}</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            ))
+        }
+    </section>
+</Layout>

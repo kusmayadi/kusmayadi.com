@@ -1,248 +1,367 @@
 {
   "stacks": [
     {
-      "id": "php",
-      "name": "PHP",
-      "image": "php.svg",
-      "url": "https://www.php.net/"
+      "id": 1,
+      "name": "Backend",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "PHP",
+          "icon": "simple-icons:php",
+          "url": "https://www.php.net/"
+        },
+        {
+          "id": 2,
+          "name": "Laravel",
+          "icon": "simple-icons:laravel",
+          "url": "https://laravel.com/"
+        },
+        {
+          "id": 3,
+          "name": "Node.js",
+          "icon": "simple-icons:nodedotjs",
+          "url": "https://nodejs.org/"
+        },
+        {
+          "id": 4,
+          "name": "Typescript",
+          "icon": "simple-icons:typescript",
+          "url": "https://www.typescriptlang.org/"
+        },
+        {
+          "id": 5,
+          "name": "NestJS",
+          "icon": "simple-icons:nestjs",
+          "url": "https://nestjs.com/"
+        },
+        {
+          "id": 6,
+          "name": "Sails",
+          "icon": "simple-icons:sailsdotjs",
+          "url": "https://sailsjs.com/"
+        }
+      ]
     },
-
     {
-      "id": "laravel",
-      "name": "Laravel",
-      "image": "laravel.svg",
-      "url": "https://laravel.com/"
+      "id": 2,
+      "name": "Frontend",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "Javascript",
+          "icon": "simple-icons:javascript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "id": 2,
+          "name": "Astro",
+          "icon": "simple-icons:astro",
+          "url": "https://astro.build/"
+        },
+        {
+          "id": 8,
+          "name": "Tailwind CSS",
+          "icon": "simple-icons:tailwindcss",
+          "url": "https://tailwindcss.com/"
+        },
+
+        {
+          "id": 3,
+          "name": "Nuxt",
+          "icon": "simple-icons:nuxt",
+          "url": "https://nuxtjs.org/"
+        },
+
+        {
+          "id": 4,
+          "name": "Vue.js",
+          "icon": "simple-icons:vuedotjs",
+          "url": "https://nextjs.org/"
+        },
+
+        {
+          "id": 5,
+          "name": "Next.js",
+          "icon": "simple-icons:nextdotjs",
+          "url": "https://vuejs.org/"
+        },
+
+        {
+          "id": 6,
+          "name": "React",
+          "icon": "simple-icons:react",
+          "url": "https://react.dev/"
+        },
+
+        {
+          "id": 7,
+          "name": "jQuery",
+          "icon": "simple-icons:jquery",
+          "url": "https://jquery.com/"
+        },
+
+        {
+          "id": 9,
+          "name": "Bootstrap",
+          "icon": "simple-icons:bootstrap",
+          "url": "https://getbootstrap.com/"
+        }
+      ]
     },
-
     {
-      "id": "filament",
-      "name": "Filament",
-      "image": "filament.svg",
-      "url": "https://filamentphp.com/"
+      "id": 3,
+      "name": "Database",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "MySQL",
+          "icon": "simple-icons:mysql",
+          "url": "https://www.mysql.com/"
+        },
+        {
+          "id": 2,
+          "name": "Redis",
+          "icon": "simple-icons:redis",
+          "url": "https://redis.io/"
+        },
+        {
+          "id": 3,
+          "name": "MongoDB",
+          "icon": "simple-icons:mongodb",
+          "url": "https://www.mongodb.com/"
+        },
+        {
+          "id": 4,
+          "name": "PostgreSQL",
+          "icon": "simple-icons:postgresql",
+          "url": "https://www.postgresql.org/"
+        }
+      ]
     },
-
     {
-      "id": "composer",
-      "name": "Composer",
-      "image": "composer.svg",
-      "url": "https://getcomposer.org/"
+      "id": 4,
+      "name": "Package Manager",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "Composer",
+          "icon": "simple-icons:composer",
+          "url": "https://getcomposer.org/"
+        },
+        {
+          "id": 2,
+          "name": "pnpm",
+          "icon": "simple-icons:pnpm",
+          "url": "https://pnpm.io/"
+        },
+        {
+          "id": 3,
+          "name": "npm",
+          "icon": "simple-icons:npm",
+          "url": "https://www.npmjs.com/"
+        }
+      ]
     },
-
     {
-      "id": "javascript",
-      "name": "Javascript",
-      "image": "logo-javascript.svg",
-      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      "id": 5,
+      "name": "DevOps",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "AWS",
+          "icon": "mdi:aws",
+          "url": "https://aws.amazon.com/"
+        },
+        {
+          "id": 2,
+          "name": "DigitalOcean",
+          "icon": "simple-icons:digitalocean",
+          "url": "https://www.digitalocean.com/"
+        },
+        {
+          "id": 3,
+          "name": "NGINX",
+          "icon": "simple-icons:nginx",
+          "url": "https://www.nginx.com/"
+        },
+        {
+          "id": 4,
+          "name": "Docker",
+          "icon": "simple-icons:docker",
+          "url": "https://www.docker.com/"
+        },
+        {
+          "id": 5,
+          "name": "Podman",
+          "icon": "simple-icons:podman",
+          "url": "https://podman.io/"
+        },
+        {
+          "id": 6,
+          "name": "Apache",
+          "icon": "simple-icons:apache",
+          "url": "https://httpd.apache.org/"
+        },
+        {
+          "id": 7,
+          "name": "Ansible",
+          "icon": "simple-icons:ansible",
+          "url": "https://www.ansible.com/"
+        },
+        {
+          "id": 8,
+          "name": "Terraform",
+          "icon": "simple-icons:terraform",
+          "url": "https://developer.hashicorp.com/terraform"
+        },
+        {
+          "id": 9,
+          "name": "Vagrant",
+          "icon": "simple-icons:vagrant",
+          "url": "https://www.vagrantup.com/"
+        }
+      ]
     },
-
     {
-      "id": "typescript",
-      "name": "Typescript",
-      "image": "ts-logo.svg",
-      "url": "https://www.typescriptlang.org/"
+      "id": 6,
+      "name": "CMS",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "Filament",
+          "icon": "simple-icons:filament",
+          "url": "https://filamentphp.com/"
+        },
+        {
+          "id": 2,
+          "name": "Drupal",
+          "icon": "simple-icons:drupal",
+          "url": "https://drupal.org"
+        },
+        {
+          "id": 2,
+          "name": "WordPress",
+          "icon": "simple-icons:wordpress",
+          "url": "https://wordpress.org/"
+        }
+      ]
     },
-
     {
-      "id": "nodejs",
-      "name": "Node.js",
-      "image": "nodejs.svg",
-      "url": "https://nodejs.org/"
+      "id": 7,
+      "name": "Editor",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "Visual Studio Code",
+          "icon": "mdi:visual-studio-code",
+          "url": "https://code.visualstudio.com/"
+        },
+        {
+          "id": 2,
+          "name": "Zed",
+          "icon": "simple-icons:zedindustries",
+          "url": "https://zed.dev/"
+        },
+        {
+          "id": 3,
+          "name": "Vim",
+          "icon": "simple-icons:vim",
+          "url": "https://www.vim.org/"
+        },
+        {
+          "id": 4,
+          "name": "Atom",
+          "icon": "simple-icons:atom",
+          "url": "https://atom.io/"
+        }
+      ]
     },
-
     {
-      "id": "npm",
-      "name": "npm",
-      "image": "npm.svg",
-      "url": "https://www.npmjs.com/"
+      "id": 8,
+      "name": "Operating System",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "macOS",
+          "icon": "simple-icons:macos",
+          "url": "https://www.apple.com/id/macos"
+        },
+        {
+          "id": 2,
+          "name": "Fedora",
+          "icon": "simple-icons:fedora",
+          "url": "https://fedoraproject.org/"
+        },
+
+        {
+          "id": 3,
+          "name": "Ubuntu",
+          "icon": "simple-icons:ubuntu",
+          "url": "https://ubuntu.com/"
+        },
+        {
+          "id": 4,
+          "name": "CentOS",
+          "icon": "simple-icons:centos",
+          "url": "https://centos.org/"
+        }
+      ]
     },
-
     {
-      "id": "sails",
-      "name": "Sails",
-      "image": "sails.svg",
-      "url": "https://sailsjs.com/"
-    },
+      "id": 9,
+      "name": "Others",
+      "techStacks": [
+        {
+          "id": 1,
+          "name": "git",
+          "icon": "simple-icons:git",
+          "url": "https://git-scm.com/"
+        },
+        {
+          "id": 2,
+          "name": "RabbitMQ",
+          "icon": "simple-icons:rabbitmq",
+          "url": "https://www.rabbitmq.com/"
+        },
+        {
+          "id": 3,
+          "name": "GitHub",
+          "icon": "simple-icons:github",
+          "url": "https://github.com/"
+        },
 
-    {
-      "id": "astro",
-      "name": "Astro",
-      "image": "astro-icon-dark.svg",
-      "url": "https://astro.build/"
-    },
+        {
+          "id": 4,
+          "name": "GitLab",
+          "icon": "simple-icons:gitlab",
+          "url": "https://about.gitlab.com/"
+        },
 
-    {
-      "id": "nuxt",
-      "name": "Nuxt",
-      "image": "nuxt.svg",
-      "url": "https://nuxtjs.org/"
-    },
-
-    {
-      "id": "vuejs",
-      "name": "Vue.js",
-      "image": "vue.svg",
-      "url": "https://nextjs.org/"
-    },
-
-    {
-      "id": "nextjs",
-      "name": "Next.js",
-      "image": "next-js.svg",
-      "url": "https://vuejs.org/"
-    },
-
-    {
-      "id": "reactjs",
-      "name": "React",
-      "image": "react.svg",
-      "url": "https://react.dev/"
-    },
-
-    {
-      "id": "jquery",
-      "name": "jQuery",
-      "image": "jquery.svg",
-      "url": "https://jquery.com/"
-    },
-
-    {
-      "id": "tailwind",
-      "name": "tailwindcss",
-      "image": "tailwindcss-icon.svg",
-      "url": "https://tailwindcss.com/"
-    },
-
-    {
-      "id": "bootstrap",
-      "name": "Bootstrap",
-      "image": "bootstrap.svg",
-      "url": "https://getbootstrap.com/"
-    },
-
-    {
-      "id": "mysql",
-      "name": "MySQL",
-      "image": "mysql.svg",
-      "url": "https://www.mysql.com/"
-    },
-
-    {
-      "id": "redis",
-      "name": "redis",
-      "image": "redis.svg",
-      "url": "https://redis.io/"
-    },
-
-    {
-      "id": "aws",
-      "name": "AWS",
-      "image": "aws.svg",
-      "url": "https://aws.amazon.com/"
-    },
-
-    {
-      "id": "digitalocean",
-      "name": "DigitalOcean",
-      "image": "digital-ocean.svg",
-      "url": "https://www.digitalocean.com/"
-    },
-
-    {
-      "id": "nginx",
-      "name": "NGINX",
-      "image": "nginx.svg",
-      "url": "https://www.nginx.com/"
-    },
-
-    {
-      "id": "ansible",
-      "name": "Ansible",
-      "image": "ansible.svg",
-      "url": "https://www.ansible.com/"
-    },
-
-    {
-      "id": "vagrant",
-      "name": "Vagrant",
-      "image": "vagrant.svg",
-      "url": "https://www.vagrantup.com/"
-    },
-
-    {
-      "id": "atom",
-      "name": "Atom",
-      "image": "atom.svg",
-      "url": "https://atom.io/"
-    },
-
-    {
-      "id": "vscode",
-      "name": "Visual Studio Code",
-      "image": "visual-studio-code.svg",
-      "url": "https://code.visualstudio.com/"
-    },
-
-    {
-      "id": "git",
-      "name": "git",
-      "image": "git-icon.svg",
-      "url": "https://git-scm.com/"
-    },
-
-    {
-      "id": "github",
-      "name": "GitHub",
-      "image": "github-icon.svg",
-      "url": "https://github.com/"
-    },
-
-    {
-      "id": "gitlab",
-      "name": "GitLab",
-      "image": "gitlab.svg",
-      "url": "https://about.gitlab.com/"
-    },
-
-    {
-      "id": "bitbucket",
-      "name": "Bitbucket",
-      "image": "bitbucket.svg",
-      "url": "https://bitbucket.org/"
-    },
-
-    {
-      "id": "pivotaltracker",
-      "name": "Pivotal Tracker",
-      "image": "pivotal_tracker.svg",
-      "url": "https://www.pivotaltracker.com/"
-    },
-
-    {
-      "id": "trello",
-      "name": "Trello",
-      "image": "trello.svg",
-      "url": "https://trello.com/"
-    },
-
-    {
-      "id": "slack",
-      "name": "Slack",
-      "image": "slack-icon.svg",
-      "url": "https://slack.com/"
-    },
-
-    {
-      "id": "macos",
-      "name": "macOS",
-      "image": "macOS.svg",
-      "url": "https://www.apple.com/id/macos"
-    },
-
-    {
-      "id": "ubuntu",
-      "name": "Ubuntu",
-      "image": "ubuntu.svg",
-      "url": "https://ubuntu.com/"
+        {
+          "id": 5,
+          "name": "Bitbucket",
+          "icon": "simple-icons:bitbucket",
+          "url": "https://bitbucket.org/"
+        },
+        {
+          "id": 6,
+          "name": "Slack",
+          "icon": "simple-icons:slack",
+          "url": "https://slack.com/"
+        },
+        {
+          "id": 7,
+          "name": "JIRA",
+          "icon": "simple-icons:jira",
+          "url": "https://www.atlassian.com/software/jira"
+        },
+        {
+          "id": 8,
+          "name": "Trello",
+          "icon": "simple-icons:trello",
+          "url": "https://trello.com/"
+        }
+      ]
     }
   ]
 }

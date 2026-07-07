@@ -26,10 +26,16 @@ const techStacks = defineCollection({
     parser: (text) => JSON.parse(text).stacks,
   }),
   schema: z.object({
-    id: z.string(),
+    id: z.number(),
     name: z.string(),
-    image: z.string(),
-    url: z.string(),
+    techStacks: z.array(
+      z.object({
+        id: z.number(),
+        name: z.string(),
+        icon: z.string().nullable(),
+        url: z.string(),
+      }),
+    ),
   }),
 });
 
@@ -38,7 +44,7 @@ const experiences = defineCollection({
     parser: (text) => JSON.parse(text).experiences,
   }),
   schema: z.object({
-    id: z.int(),
+    id: z.number(),
     title: z.string(),
     company: z.string(),
     location: z.string(),
