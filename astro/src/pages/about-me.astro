@@ -1,35 +1,57 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import profilePic from "../assets/kusmayadi.jpeg";
+import Layout from "@/layouts/Layout.astro";
+import profilePic from "@/assets/kusmayadi-avatar.png";
 import { Picture } from "astro:assets";
+import { Image } from "astro:assets";
+import Picture from "astro/components/Picture.astro";
 ---
 
 <Layout title="About Kusmayadi" description="A little bit about Kusmayadi">
-    <section
-        class="flex flex-col bg-[#eceff4] w-full rounded-lg py-7 px-9 text-[#3b4252] text-sm md:text-base"
-    >
-        <h1 class="mb-7">Hello World!</h1>
-        <div>
-            <div
-                class="relative lg:w-44 lg:h-44 w-28 h-28 overflow-hidden rounded-full shadow-xl float-right ml-4"
-            >
-                <Picture src={profilePic} alt="Kusmayadi" />
+    <section class="container mx-auto">
+        <div class="card card-side w-full bg-base-300 mx-auto shadow-lg">
+            <figure class="p-6 pr-0">
+                <Picture
+                    src={profilePic}
+                    alt="Kusmayadi"
+                    class="rounded-xl shadow-xl"
+                />
+            </figure>
+            <div class="card-body text-2xl">
+                <p class="mb-5">
+                    Hi, I'm Kusmayadi, a software engineer, lifelong learner,
+                    and someone who genuinely enjoys building things that solve
+                    real problems. I've been developing for more than 25 years,
+                    with the last decade focused on Laravel and modern web
+                    technologies. Over the years, I've worked on everything from
+                    business applications and APIs to marketplaces and SaaS
+                    platforms, always aiming to create software that is clean,
+                    reliable, and built to last. I enjoy diving into complex
+                    technical challenges, but I find just as much satisfaction
+                    in simplifying them into solutions that make life easier for
+                    users and development teams alike.
+                </p>
+
+                <p class="mb-5">
+                    Outside of writing code, I'm always exploring new
+                    technologies, refining my craft, and learning better ways to
+                    build software. I enjoy sharing knowledge, mentoring other
+                    developers, and collaborating with people who care about
+                    quality as much as I do. When I'm away from the keyboard,
+                    you'll probably find me listening to blues, grunge, or
+                    electronic music, experimenting with guitar effects, or
+                    tinkering with side projects just for the joy of learning. I
+                    believe the best engineers stay curious, never stop
+                    improving, and always leave the codebase a little better
+                    than they found it.
+                </p>
+
+                <p class="mb-5">
+                    Feel free to <a href="/get-in-touch" class="underline"
+                        >contact me</a
+                    > if you have the same interests, have some projects that need
+                    some help, or just growing a network.
+                </p>
             </div>
-            <p class="mb-5">
-                I am Kusmayadi. I am an experienced software engineer, having
-                more than 20 years experience who love building system and
-                interested in system architecture, product development, and
-                leading tech team.
-            </p>
-
-            <p class="mb-5">I am also into music and movies.</p>
-
-            <p class="mb-5">
-                Feel free to <a href="/get-in-touch" class="underline"
-                    >contact me</a
-                > if you have the same interests, have some projects that need me
-                to help, or just growing a network.
-            </p>
         </div>
     </section>
 </Layout>
