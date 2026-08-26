@@ -1,0 +1,116 @@
+---
+import { type CollectionEntry } from "astro:content";
+import { getImage } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import DynamicImage from "../DynamicImage.astro";
+
+interface Props {
+    projects: CollectionEntry<"projects">[];
+}
+const { projects } = Astro.props;
+---
+
+<section class="container mx-auto mb-6">
+    <div class="carousel h-screen w-full">
+        {
+            projects.map(async (project, index) => {
+                let image = null;
+                if (project.data.image) {
+                    image = await getImage({
+                        src: `/src/assets/projects/${project.data.image}`,
+                        alt: project.data.name,
+                        width: 1321,
+                        height: 10875,
+                    });
+                }
+
+                const nextProject =
+                    index == projects.length - 1
+                        ? null
+                        : projects[index + 1].data.id;
+                const prevProject =
+                    index == 0 ? null : projects[index - 1].data.id;
+
+                return (
+                    <div
+                        id={project.id}
+                        class="
+                            carousel-item
+                            w-full
+                            relative
+                            pt-24
+                            max-h-[calc(100vh-theme(spacing.24))]"
+                    >
+                        <div class="flex bg-base-300 rounded-md max-h-[calc(100vh-theme(spacing.24))]">
+                            <div class="w-1/2 max-h-[calc(100vh-theme(spacing.24))]">
+                                {project.data.image && (
+                                    <a href={`/projects/${project.data.slug}`}>
+                                        <figure>
+                                            <DynamicImage
+                                                imagePath={`/src/assets/projects/${project.data.image}`}
+                                                altText={project.data.name}
+                                                class="object-top object-cover rounded-l-md shadow-xl max-h-[calc(100vh-theme(spacing.24))]"
+                                                loading="eager"
+                                            />
+                                        </figure>
+                                    </a>
+                                )}
+                            </div>
+                            <div class="w-1/2 p-10 relative">
+                                <h2 class="text-8xl! mb-5">
+                                    {project.data.name}
+                                </h2>
+                                <p class="my-5">
+                                    {project.data.summary
+                                        .split("\n\n")
+                                        .map((paragraph) => (
+                                            <p class="mb-5">{paragraph}</p>
+                                        ))}
+                                </p>
+                                <div class="absolute bottom-5">
+                                    {project.data.techStacks.length >= 1 && (
+                                        <div class="flex space-x-1 mt-4">
+                                            {project.data.techStacks.map(
+                                                (tech) => (
+                                                    <span class="badge badge-sm badge-accent">
+                                                        {tech}
+                                                    </span>
+                                                ),
+                                            )}
+                                        </div>
+                                    )}
+                                    <a
+                                        href={`/projects/${project.data.slug}`}
+                                        class="btn btn-md btn-primary text-lg mt-3"
+                                    >
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            {prevProject && (
+                                <a
+                                    href={`#${prevProject}`}
+                                    class="btn btn-circle"
+                                >
+                                    ❮
+                                </a>
+                            )}
+                            {prevProject == null && <div />}
+                            {nextProject && (
+                                <a
+                                    href={`#${nextProject}`}
+                                    class="btn btn-circle"
+                                >
+                                    ❯
+                                </a>
+                            )}
+                            {nextProject == null && <div />}
+                        </div>
+                    </div>
+                );
+            })
+        }
+    </div>
+</section>

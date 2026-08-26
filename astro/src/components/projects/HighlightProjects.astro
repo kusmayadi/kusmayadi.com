@@ -1,0 +1,54 @@
+---
+import { type CollectionEntry } from "astro:content";
+import DynamicImage from "@/components/DynamicImage.astro";
+
+interface Props {
+    projects: CollectionEntry<"projects">[];
+}
+
+const { projects } = Astro.props;
+---
+
+<section class="container mx-auto my-6 grid grid-cols-2 gap-4">
+    {
+        projects.map((project, index) => (
+            <div class="card bg-base-300 shadow-xl">
+                <figure class="shadow-lg">
+                    <a href={`/projects/${project.data.slug}`} target="project">
+                        <DynamicImage
+                            imagePath={`/src/assets/projects/${project.data.image}`}
+                            altText={project.data.name}
+                            class="object-top object-cover h-120"
+                            loading="lazy"
+                        />
+                    </a>
+                </figure>
+                <div class="card-body card-sm">
+                    <h2 class="card-title text-3xl!">{project.data.name}</h2>
+                    {project.data.summary.split("\n\n").map((paragraph) => (
+                        <p>{paragraph}</p>
+                    ))}
+
+                    {project.data.techStacks.length >= 1 && (
+                        <div class="flex space-x-1">
+                            {project.data.techStacks.map((tech) => (
+                                <span class="badge badge-xs badge-accent">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                    )}
+
+                    <div class="card-actions">
+                        <a
+                            href={`/projects/${project.data.slug}`}
+                            class="btn btn-sm btn-accent"
+                        >
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        ))
+    }
+</section>

@@ -1,0 +1,63 @@
+---
+import { type CollectionEntry } from "astro:content";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+    projects: CollectionEntry<"projects">[];
+}
+
+const { projects } = Astro.props;
+---
+<section class="container mx-auto my-6">
+    <div class="divider text-4xl mb-10">
+        Other Past & Shutdown Projects
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+        {projects.map((project) => (
+            <div class="hover-3d">
+            <div class="card card-xs w-full bg-base-content text-base-100 cursor-pointer" onclick={`document.getElementById('modal-archived-${project.id}').showModal()`}>
+                <div class="card-body items-center justify-center text-center">
+                    <div class="card-title">{project.data.name}</div>
+                </div>
+            </div>
+            </div>
+
+            <dialog id={`modal-archived-${project.id}`} class="modal">
+              <div class="modal-box w-11/12 max-w-1/2 bg-base-content text-base-200">
+                  <h2 aria-label={project.data.name} class="text-lg font-bold">{project.data.name}</h2>
+                <p>{project.data.summary}</p>
+
+                {project.data.techStacks.length >= 1 && (
+                    <div class="flex space-x-1">
+                        {project.data.techStacks.map((tech) => (
+                            <span class="badge badge-accent">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                )}
+
+                {project.data.website?.active && (
+                    <div class="modal-action">
+                        <a
+                            href={project.data.website?.url}
+                            aria-label={project.data.website?.title}
+                            target="_blank"
+                            class="btn btn-sm"
+                        >
+                            <Icon
+                                name="mdi:open-in-new"
+                                class="w-4 h-4"
+                            />
+                            <span>{project.data.website?.title}</span>
+                        </a>
+                    </div>
+                )}
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
+        ))}
+    </div>
+</section>

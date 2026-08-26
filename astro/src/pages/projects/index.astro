@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import FeaturedProjects from "@/components/projects/FeaturedProjects.astro";
+import HighlightProjects from "@/components/projects/HighlightProjects.astro";
+import OtherProjects from "@/components/projects/OtherProjects.astro";
+import ArchivedProjects from "@/components/projects/ArchivedProjects.astro";
+
+const projects = (await getCollection("projects")).sort(
+    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
+);
+const featuredProjects = projects.filter(
+    (project) => project.data.category.id === "featured",
+);
+const highlightProjects = projects.filter(
+    (project) => project.data.category.id === "highlight",
+);
+const otherProjects = projects.filter(
+    (project) => project.data.category.id === "other",
+);
+const archivedProjects = projects.filter(
+    (project) => project.data.category.id === "archived",
+);
+console.log(featuredProjects);
+---
+
+<Layout title="Projects" description="List of projects Kusmayadi involved in.">
+    {featuredProjects && <FeaturedProjects projects={featuredProjects} />}
+
+    {highlightProjects && <HighlightProjects projects={highlightProjects} />}
+
+    {otherProjects && <OtherProjects projects={otherProjects} />}
+
+    {archivedProjects && <ArchivedProjects projects={archivedProjects} />}
+</Layout>

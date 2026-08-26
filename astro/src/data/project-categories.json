@@ -1,0 +1,20 @@
+{
+  "categories": [
+    {
+      "id": "featured",
+      "name": "Featured"
+    },
+    {
+      "id": "highlight",
+      "name": "Highlight"
+    },
+    {
+      "id": "other",
+      "name": "Other"
+    },
+    {
+      "id": "archived",
+      "name": "Archived"
+    }
+  ]
+}
