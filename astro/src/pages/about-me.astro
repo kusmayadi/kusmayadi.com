@@ -5,18 +5,21 @@ import { Picture } from "astro:assets";
 ---
 
 <Layout title="About Kusmayadi" description="A little bit about Kusmayadi">
-    <section class="container mx-auto">
-        <div class="card card-side w-full bg-base-300 mx-auto shadow-lg">
+    <section class="container mx-auto h-screen pt-24 pb-5">
+        <div
+            class="card card-side card-xl h-full w-full mx-auto bg-base-300 shadow-lg"
+        >
             <figure class="p-6 pr-0">
                 <Picture
                     src={profilePic}
                     alt="Kusmayadi"
                     class="rounded-xl shadow-xl"
                     loading="eager"
+                    width={1500}
                 />
             </figure>
-            <div class="card-body text-2xl">
-                <p class="mb-5">
+            <div class="card-body pt-5 text-2xl">
+                <p class="grow-0 mb-4">
                     Hi, I'm Kusmayadi, a software engineer, lifelong learner,
                     and someone who genuinely enjoys building things that solve
                     real problems. I've been developing for more than 25 years,
@@ -30,7 +33,7 @@ import { Picture } from "astro:assets";
                     users and development teams alike.
                 </p>
 
-                <p class="mb-5">
+                <p class="mb-4 grow-0">
                     Outside of writing code, I'm always exploring new
                     technologies, refining my craft, and learning better ways to
                     build software. I enjoy sharing knowledge, mentoring other
@@ -44,7 +47,7 @@ import { Picture } from "astro:assets";
                     than they found it.
                 </p>
 
-                <p class="mb-5">
+                <p class="mb-4 grow-0">
                     Feel free to <a href="/get-in-touch" class="underline"
                         >contact me</a
                     > if you have the same interests, have some projects that need
