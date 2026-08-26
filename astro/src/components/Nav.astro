@@ -4,7 +4,10 @@ import avatar from "../assets/kusmayadi.png";
 import { Picture } from "astro:assets";
 ---
 
-<header class="fixed top-0 w-full pt-4 z-40">
+<header
+    id="header"
+    class="fixed top-0 w-full pt-4 z-40 transition-all duration-300"
+>
     <div class="container mx-auto flex items-center justify-between px-3">
         <div
             class="flex space-x-2 items-center bg-primary text-primary-content rounded-box px-3 py-2"
@@ -55,3 +58,38 @@ import { Picture } from "astro:assets";
         </div>
     </div>
 </header>
+
+<script>
+    const initHeader = () => {
+        const header = document.getElementById("header");
+        const classOnScroll = ["bg-primary", "shadow-md", "py-0"];
+        const classOnTop = ["bg-transparent", "pt-4", "pb-0"];
+
+        const checkScroll = () => {
+            if (window.scrollY > 50) {
+                classOnScroll.forEach((className) => {
+                    header?.classList.add(className);
+                });
+
+                classOnTop.forEach((className) => {
+                    header?.classList.remove(className);
+                });
+            } else {
+                classOnScroll.forEach((className) => {
+                    header?.classList.remove(className);
+                });
+
+                classOnTop.forEach((className) => {
+                    header?.classList.add(className);
+                });
+            }
+        };
+
+        checkScroll();
+
+        window.addEventListener("scroll", checkScroll);
+    };
+
+    document.addEventListener("DOMContentLoaded", initHeader);
+    console.log(window.scrollY);
+</script>
