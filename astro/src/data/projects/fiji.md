@@ -18,8 +18,6 @@ summary: |
 
   Contributed to the platform by developing APIs and extending Kentico with custom fields and functionality, using C#, .NET, and Next.js.
 ---
-Pellentesque vel magna feugiat sapien posuere ullamcorper eu sit amet est. Aenean convallis odio elit, consectetur porttitor sapien vulputate ac. Integer accumsan euismod magna, condimentum condimentum quam lacinia id. Proin ut libero volutpat, tristique erat nec, congue purus. Nam ullamcorper massa quis orci pellentesque, vel accumsan neque ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ut nunc in nunc rutrum accumsan sed vitae augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+I am still working on the detail of this project. It will describe the detail of the projects, the challenges, and the achivements. 
 
-Pellentesque vel magna feugiat sapien posuere ullamcorper eu sit amet est. Aenean convallis odio elit, consectetur porttitor sapien vulputate ac. Integer accumsan euismod magna, condimentum condimentum quam lacinia id. Proin ut libero volutpat, tristique erat nec, congue purus. Nam ullamcorper massa quis orci pellentesque, vel accumsan neque ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ut nunc in nunc rutrum accumsan sed vitae augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-
-Pellentesque vel magna feugiat sapien posuere ullamcorper eu sit amet est. Aenean convallis odio elit, consectetur porttitor sapien vulputate ac. Integer accumsan euismod magna, condimentum condimentum quam lacinia id. Proin ut libero volutpat, tristique erat nec, congue purus. Nam ullamcorper massa quis orci pellentesque, vel accumsan neque ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus ut nunc in nunc rutrum accumsan sed vitae augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+Please come back again soon.

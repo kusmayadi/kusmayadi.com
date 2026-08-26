@@ -16,3 +16,6 @@ techStacks:
 pubDate: 2026-08-05T18:56:00.000+07:00
 summary: An e-commerce platform built to support online retail and digital commerce operations. Contributed to the development of the e-commerce system, working with PHP, Symfony, and PostgreSQL to build and maintain its core functionality.
 ---
+I am still working on the detail of this project. It will describe the detail of the projects, the challenges, and the achivements. 
+
+Please come back again soon.

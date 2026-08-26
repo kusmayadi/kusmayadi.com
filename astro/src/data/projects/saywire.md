@@ -18,3 +18,6 @@ techStacks:
 pubDate: 2026-08-05T19:01:00.000+07:00
 summary: A social networking platform designed for high school students across the United States, providing a dedicated online space for students to connect and communicate. Contributed to the platform's development using PHP, PHP-Fusebox, and MySQL, with Subversion used for source control.
 ---
+I am still working on the detail of this project. It will describe the detail of the projects, the challenges, and the achivements. 
+
+Please come back again soon.

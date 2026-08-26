@@ -62,7 +62,12 @@ import { Picture } from "astro:assets";
 <script>
     const initHeader = () => {
         const header = document.getElementById("header");
-        const classOnScroll = ["bg-primary", "shadow-md", "py-0"];
+        const classOnScroll = [
+            "bg-primary",
+            "shadow-xl",
+            "rounded-b-xl",
+            "py-0",
+        ];
         const classOnTop = ["bg-transparent", "pt-4", "pb-0"];
 
         const checkScroll = () => {

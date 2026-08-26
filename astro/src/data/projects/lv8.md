@@ -21,3 +21,6 @@ techStacks:
 pubDate: 2026-08-05T18:56:00.000+07:00
 summary: A video streaming platform focused on delivering live and on-demand video experiences. As CTO, I led the development team, defined the technical architecture and solutions, managed technical planning and budgeting, and contributed hands-on to API development and video transcoding.
 ---
+I am still working on the detail of this project. It will describe the detail of the projects, the challenges, and the achivements. 
+
+Please come back again soon.
