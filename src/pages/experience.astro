@@ -20,7 +20,7 @@ const experiences = experiencesCollection.sort((a, b) => a.data.id - b.data.id);
         class="container mx-auto mt-24 text-content bg-base-300 mb-5 shadow-lg rounded-lg"
     >
         <div class="pt-10">
-            <ul class="timeline timeline-snap-icon timeline-vertical">
+            <ul class="timeline timeline-vertical timeline-snap-icon">
                 {
                     experiences.map((experience, index) => (
                         <li>
@@ -93,7 +93,7 @@ const experiences = experiencesCollection.sort((a, b) => a.data.id - b.data.id);
                                     </div>
                                 </details>
                             </div>
-                            <hr />
+                            <hr class="bg-primary" />
                         </li>
                     ))
                 }
