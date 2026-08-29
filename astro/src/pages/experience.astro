@@ -12,9 +12,7 @@ interface Experience {
 
 const experiencesCollection = await getCollection("experiences");
 
-const experiences = experiencesCollection.sort(
-    (a, b) => parseInt(a.data.id) - parseInt(b.data.id),
-);
+const experiences = experiencesCollection.sort((a, b) => a.data.id - b.data.id);
 ---
 
 <Layout title="Work Experiences" description="Kusmayadi's work experiences">
