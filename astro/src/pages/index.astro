@@ -1,80 +1,63 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const heroes = [
+    {
+        id: 1,
+        title: "30 years of building for the web.",
+        summary:
+            "From the early days of PHP to modern web platforms, I've spent decades turning ideas into software. And I'm still enjoying the journey.",
+        image: "experience.png",
+    },
+    {
+        id: 2,
+        title: "I enjoy solving difficult problems.",
+        summary:
+            "Whether it's designing APIs, building scalable systems, or simplifying complex requirements, I care about creating software that's reliable, maintainable, and built to last.",
+        image: "engineering.png",
+    },
+    {
+        id: 3,
+        title: "Good software is built by good teams.",
+        summary:
+            "I enjoy leading developers, sharing knowledge, shaping technical direction, and helping teams turn challenging ideas into products that work.",
+        image: "leadership.png",
+    },
+];
 ---
 
 <Layout title="Kusmayadi" description="Kusmayadi's personal website">
-    <div
-        class="hero min-h-screen"
-        style="background-image: url(/images/cpu_city.png);"
-    >
-        <div class="hero-overlay"></div>
-        <div class="container text-neutral-content">
-            <div id="carousel" class="carousel w-full client:load">
-                <div
-                    id="item1"
-                    class="carousel-item w-full mb-12 text-6xl font-bold"
-                >
-                    Lead Developer
-                </div>
-                <div
-                    id="item2"
-                    class="carousel-item w-full mb-12 text-6xl font-bold"
-                >
-                    Laravel Expert
-                </div>
-                <div
-                    id="item3"
-                    class="carousel-item w-full mb-12 text-6xl font-bold"
-                >
-                    Building scalable web applications for over 25 years.
-                </div>
-            </div>
-        </div>
+    <div id="carousel" class="carousel w-full client:load">
+        {
+            heroes.map((hero) => {
+                return (
+                    <div
+                        id=`item${hero.id}`
+                        class="carousel-item w-full text-6xl font-bold"
+                    >
+                        <div class="hero min-h-screen" style=`background-image: url(/images/${hero.image});`>
+                            <div class="hero-overlay" />
+                            <div class="hero-content">
+                                <div class="w-full">
+                                    <h1 class="mb-9 text-6xl font-bold">{hero.title}</h1>
+                                    <p class="mb-5 text-3xl">{hero.summary}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            })
+        }
     </div>
-
-    <section class="container mx-auto my-10">
-        <div class="grid grid-cols-4 gap-20">
-            <div class="card w-96 bg-base-300 card-xl shadow-sm">
-                <div class="card-body flex-1 items-center justify-center">
-                    <span class="text-5xl">25+</span>
-                    <p>Years Experience</p>
-                </div>
-            </div>
-
-            <div class="card w-96 bg-base-300 card-xl shadow-sm">
-                <div class="card-body flex-1 items-center justify-center">
-                    <span class="text-5xl">10+</span>
-                    <p>Years Laravel</p>
-                </div>
-            </div>
-
-            <div class="card w-96 bg-base-300 card-xl shadow-sm">
-                <div
-                    class="card-body text-center flex-1 items-center justify-center"
-                >
-                    <span class="text-5xl">100+</span>
-                    <p>Projects Delivered</p>
-                </div>
-            </div>
-
-            <div class="card w-96 bg-base-300 card-xl shadow-sm">
-                <div class="card-body flex-1 items-center justify-center">
-                    <span class="text-5xl">Remote Ready</span>
-                </div>
-            </div>
-        </div>
-    </section>
 </Layout>
 <script>
-    import { fade } from "astro:transitions";
-
     // ---- Config ----
-    const CAROUSEL_ID = "carousel";
-    const INTERVAL_MS = 5000; // time between slides
-    const PAUSE_ON_HOVER = false;
+    const carouselId = "carousel";
+    const interval = 5000; // time between slides
+    const pauseOnHover = false;
 
     // ---- Setup ----
-    const carousel = document.getElementById(CAROUSEL_ID);
+    const carousel = document.getElementById(carouselId);
     let slides: Element[] | null[] = [];
     if (carousel) {
         slides = Array.from(carousel.querySelectorAll(".carousel-item"));
@@ -102,7 +85,7 @@ import Layout from "../layouts/Layout.astro";
 
     function startAutoplay() {
         stopAutoplay(); // avoid duplicate timers
-        timer = setInterval(nextSlide, INTERVAL_MS);
+        timer = setInterval(nextSlide, interval);
         isPlaying = true;
         if (playPauseBtn) playPauseBtn.textContent = "Pause";
     }
@@ -117,7 +100,7 @@ import Layout from "../layouts/Layout.astro";
         isPlaying ? stopAutoplay() : startAutoplay();
     });
 
-    if (PAUSE_ON_HOVER) {
+    if (pauseOnHover) {
         carousel?.addEventListener("mouseenter", stopAutoplay);
         carousel?.addEventListener("mouseleave", () => {
             if (!timer) startAutoplay();
