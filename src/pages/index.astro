@@ -33,14 +33,14 @@ const heroes = [
                 return (
                     <div
                         id=`item${hero.id}`
-                        class="carousel-item w-full text-6xl font-bold"
+                        class="carousel-item w-full font-bold"
                     >
-                        <div class="hero min-h-screen" style=`background-image: url(/images/${hero.image});`>
+                        <div class="hero min-h-[100svh]" style=`background-image: url(/images/${hero.image});`>
                             <div class="hero-overlay" />
-                            <div class="hero-content">
+                            <div class="hero-content w-full px-5 py-24 sm:px-10">
                                 <div class="w-full">
-                                    <h1 class="mb-9 text-6xl font-bold">{hero.title}</h1>
-                                    <p class="mb-5 text-3xl">{hero.summary}</p>
+                                    <h1 class="mb-6 text-3xl font-bold sm:mb-9 sm:text-5xl lg:text-6xl">{hero.title}</h1>
+                                    <p class="mb-5 text-base leading-relaxed sm:text-xl lg:text-3xl">{hero.summary}</p>
                                 </div>
                             </div>
                         </div>

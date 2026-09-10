@@ -1,8 +1,6 @@
 ---
 import { type CollectionEntry } from "astro:content";
-import { getImage } from "astro:assets";
-import { Icon } from "astro-icon/components";
-import DynamicImage from "../DynamicImage.astro";
+import DynamicImage from "@/components/DynamicImage.astro";
 
 interface Props {
     projects: CollectionEntry<"projects">[];
@@ -10,20 +8,10 @@ interface Props {
 const { projects } = Astro.props;
 ---
 
-<section class="container mx-auto mb-6">
-    <div class="carousel h-screen w-full">
+<section class="container mx-auto mb-6 w-full px-3 sm:px-4 lg:px-0">
+    <div class="carousel w-full">
         {
             projects.map(async (project, index) => {
-                let image = null;
-                if (project.data.image) {
-                    image = await getImage({
-                        src: `/src/assets/projects/${project.data.image}`,
-                        alt: project.data.name,
-                        width: 1321,
-                        height: 10875,
-                    });
-                }
-
                 const nextProject =
                     index == projects.length - 1
                         ? null
@@ -34,45 +22,40 @@ const { projects } = Astro.props;
                 return (
                     <div
                         id={project.id}
-                        class="
-                            carousel-item
-                            w-full
-                            relative
-                            pt-24
-                            max-h-[calc(100vh-theme(spacing.24))]"
+                        class="carousel-item relative w-full shrink-0 snap-center pt-24 pb-10 lg:max-h-[calc(100svh-(--spacing(24)))]"
                     >
-                        <div class="flex bg-base-300 rounded-md max-h-[calc(100vh-theme(spacing.24))]">
-                            <div class="w-1/2 max-h-[calc(100vh-theme(spacing.24))]">
+                        <div class="flex flex-col overflow-hidden rounded-md bg-base-300 shadow-xl lg:h-[calc(100svh-(--spacing(24)))] lg:flex-row">
+                            <div class="w-full shrink-0 lg:h-full lg:w-1/2">
                                 {project.data.image && (
                                     <a href={`/projects/${project.data.slug}`}>
                                         <figure>
                                             <DynamicImage
                                                 imagePath={`/src/assets/projects/${project.data.image}`}
                                                 altText={project.data.name}
-                                                class="object-top object-cover rounded-l-md shadow-xl max-h-[calc(100vh-theme(spacing.24))]"
+                                                class="h-64 w-full rounded-t-md object-cover object-top shadow-xl sm:h-80 lg:h-full lg:rounded-l-md lg:rounded-t-none"
                                                 loading="eager"
                                             />
                                         </figure>
                                     </a>
                                 )}
                             </div>
-                            <div class="w-1/2 p-10 relative">
-                                <h2 class="text-8xl! mb-5">
+                            <div class="flex min-w-0 w-full flex-col p-5 sm:p-8 lg:w-1/2 lg:p-10">
+                                <h2 class="mb-3 text-4xl! sm:text-6xl! lg:mb-5 lg:text-8xl!">
                                     {project.data.name}
                                 </h2>
-                                <p class="my-5">
+                                <div class="my-2 text-sm leading-relaxed sm:text-base lg:my-5">
                                     {project.data.summary
                                         .split("\n\n")
                                         .map((paragraph) => (
                                             <p class="mb-5">{paragraph}</p>
                                         ))}
-                                </p>
-                                <div class="absolute bottom-5">
+                                </div>
+                                <div class="mt-auto pt-2">
                                     {project.data.techStacks.length >= 1 && (
-                                        <div class="flex space-x-1 mt-4">
+                                        <div class="mt-4 flex flex-wrap gap-1">
                                             {project.data.techStacks.map(
                                                 (tech) => (
-                                                    <span class="badge badge-sm badge-accent">
+                                                    <span class="badge badge-sm badge-accent whitespace-nowrap">
                                                         {tech}
                                                     </span>
                                                 ),
@@ -81,18 +64,19 @@ const { projects } = Astro.props;
                                     )}
                                     <a
                                         href={`/projects/${project.data.slug}`}
-                                        class="btn btn-md btn-primary text-lg mt-3"
+                                        class="btn btn-md mt-3 w-full text-lg sm:w-auto"
                                     >
                                         Read More
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <div class="pointer-events-none absolute inset-x-2 top-1/2 z-10 flex -translate-y-1/2 transform justify-between sm:inset-x-5">
                             {prevProject && (
                                 <a
                                     href={`#${prevProject}`}
-                                    class="btn btn-circle"
+                                    aria-label="Previous project"
+                                    class="btn btn-circle pointer-events-auto btn-sm sm:btn-md"
                                 >
                                     ❮
                                 </a>
@@ -101,7 +85,8 @@ const { projects } = Astro.props;
                             {nextProject && (
                                 <a
                                     href={`#${nextProject}`}
-                                    class="btn btn-circle"
+                                    aria-label="Next project"
+                                    class="btn btn-circle pointer-events-auto btn-sm sm:btn-md"
                                 >
                                     ❯
                                 </a>

@@ -8,11 +8,11 @@ interface Props {
 
 const { projects } = Astro.props;
 ---
-<section class="container mx-auto my-6">
-    <div class="divider text-4xl mb-10">
+<section class="container mx-auto my-2 md:my-6 w-full px-3 sm:px-4 lg:px-0">
+    <div class="divider mb-5 md:mb-10 text-lg sm:text-4xl">
         Other Past & Shutdown Projects
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-6 gap-4">
+    <div class="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-6">
         {projects.map((project) => (
             <div class="hover-3d">
             <div class="card card-xs w-full bg-base-content text-base-100 cursor-pointer" onclick={`document.getElementById('modal-archived-${project.id}').showModal()`}>

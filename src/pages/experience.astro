@@ -17,9 +17,9 @@ const experiences = experiencesCollection.sort((a, b) => a.data.id - b.data.id);
 
 <Layout title="Work Experiences" description="Kusmayadi's work experiences">
     <section
-        class="container mx-auto mt-24 text-content bg-base-300 mb-5 shadow-lg rounded-lg"
+        class="container mx-auto mt-24 mb-5 px-3"
     >
-        <div class="pt-10">
+        <div class="pt-10 rounded-lg bg-base-300 shadow-lg text-content">
             <ul class="timeline timeline-vertical timeline-snap-icon">
                 {
                     experiences.map((experience, index) => (
@@ -60,13 +60,13 @@ const experiences = experiencesCollection.sort((a, b) => a.data.id - b.data.id);
                                         ]}
                                         data-tip="Click to see more details"
                                     >
-                                        <time class="font-mono italic">
+                                        <time class="font-mono italic text-xs md:text-base">
                                             {experience.data.date}
                                         </time>
-                                        <div class="text-xl font-black">
+                                        <div class="text-base font-black sm:text-xl">
                                             {experience.data.title}
                                         </div>
-                                        <div class="font-bold text-lg">
+                                        <div class="text-base font-bold sm:text-md">
                                             {experience.data.company}
                                         </div>
                                         <div

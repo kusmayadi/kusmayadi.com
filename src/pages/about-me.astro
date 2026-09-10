@@ -5,11 +5,11 @@ import { Picture } from "astro:assets";
 ---
 
 <Layout title="About Kusmayadi" description="A little bit about Kusmayadi">
-    <section class="container mx-auto h-screen pt-24 pb-5">
+    <section class="container mx-auto min-h-screen pt-24 pb-5 px-3">
         <div
-            class="card card-side card-xl h-full w-full mx-auto bg-base-300 shadow-lg"
+            class="card card-xl mx-auto w-full bg-base-300 shadow-lg lg:card-side"
         >
-            <figure class="p-6 pr-0">
+            <figure class="p-4 sm:p-6 lg:pr-0">
                 <Picture
                     src={profilePic}
                     alt="Kusmayadi"
@@ -18,7 +18,7 @@ import { Picture } from "astro:assets";
                     width={1500}
                 />
             </figure>
-            <div class="card-body pt-5 text-2xl">
+            <div class="card-body pt-5 text-base leading-relaxed sm:text-lg lg:text-2xl">
                 <p class="grow-0 mb-4">
                     Hi, I'm Kusmayadi, a software engineer, lifelong learner,
                     and someone who genuinely enjoys building things that solve

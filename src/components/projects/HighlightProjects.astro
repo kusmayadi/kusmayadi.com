@@ -9,7 +9,7 @@ interface Props {
 const { projects } = Astro.props;
 ---
 
-<section class="container mx-auto my-6 grid grid-cols-2 gap-4">
+<section class="container mx-auto my-6 grid w-full grid-cols-1 gap-4 px-3 sm:px-4 md:grid-cols-2 lg:px-0">
     {
         projects.map((project, index) => (
             <div class="card bg-base-300 shadow-xl">
@@ -18,19 +18,19 @@ const { projects } = Astro.props;
                         <DynamicImage
                             imagePath={`/src/assets/projects/${project.data.image}`}
                             altText={project.data.name}
-                            class="object-top object-cover h-120"
+                            class="h-56 object-cover object-top sm:h-96"
                             loading="lazy"
                         />
                     </a>
                 </figure>
                 <div class="card-body card-sm">
-                    <h2 class="card-title text-3xl!">{project.data.name}</h2>
+                    <h2 class="card-title text-2xl! sm:text-3xl!">{project.data.name}</h2>
                     {project.data.summary.split("\n\n").map((paragraph) => (
                         <p>{paragraph}</p>
                     ))}
 
                     {project.data.techStacks.length >= 1 && (
-                        <div class="flex space-x-1">
+                        <div class="flex flex-wrap gap-1">
                             {project.data.techStacks.map((tech) => (
                                 <span class="badge badge-xs badge-accent">
                                     {tech}
